@@ -18,3 +18,5 @@ Ak chceš uploadovať fotky do hry, tak to ide aj cez túto stránku, ale je to 
 4. *(optional)* Vytvorím pull request, aby som to vedel mergnúť do hlavnej vetvy
 
 Rád by som všetko spojazdnil čo najskôr, aby sme nestrácali čas namiesto pracovania na hre
+
+[Google doc](https://docs.google.com/document/d/1eWJkwBysrTIPpjDZhwHpCY-owHBNe201osDEkZ3lEZM/edit?usp=sharing)
