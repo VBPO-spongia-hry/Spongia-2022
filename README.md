@@ -21,5 +21,5 @@ Rád by som všetko spojazdnil čo najskôr, aby sme nestrácali čas namiesto p
 
 
 ## LINKY NA NEJAKE SHADY PORNOSTRANKY
--[tech tree](https://docs.google.com/spreadsheets/d/1YrOJNCSg42M4qrdW6M4-VixxszYXsPnOivRYsxmLwBA/edit#gid=0)
--[Mechanika](https://docs.google.com/document/d/1eWJkwBysrTIPpjDZhwHpCY-owHBNe201osDEkZ3lEZM/edit?usp=sharing)
+[tech tree](https://docs.google.com/spreadsheets/d/1YrOJNCSg42M4qrdW6M4-VixxszYXsPnOivRYsxmLwBA/edit#gid=0)
+[Mechanika](https://docs.google.com/document/d/1eWJkwBysrTIPpjDZhwHpCY-owHBNe201osDEkZ3lEZM/edit?usp=sharing)
