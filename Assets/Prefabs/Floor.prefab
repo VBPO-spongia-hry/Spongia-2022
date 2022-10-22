@@ -373,6 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6896527010877078469}
   - component: {fileID: 5939014835882562352}
+  - component: {fileID: 8607392561718498541}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -413,6 +414,17 @@ MonoBehaviour:
   itemUIPrefab: {fileID: 8507768645999642927, guid: fbeb62ff6c8339ea1ad3c6df324d0953, type: 3}
   itemsContainer: {fileID: 6266826254789383391}
   selectedItem: {fileID: 5848562605236672641}
+--- !u!210 &8607392561718498541
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6896527010877078474}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &7670983476732448334
 GameObject:
   m_ObjectHideFlags: 0

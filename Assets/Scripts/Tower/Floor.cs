@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering;
 
 namespace Tower
 {
@@ -23,11 +24,13 @@ namespace Tower
         public void Init(int level, FloorSO floor)
         {
             transform.position = new Vector3(0, (level - 1) * floorHeight);
+            GetComponent<SortingGroup>().sortingLayerName = "Background";
             LeanTween.scale(gameObject, Vector3.one, animationTime).setEaseInOutCubic();
             LeanTween.moveY(gameObject, transform.position.y + floorHeight, animationTime).setEaseSpring();
             GetComponentInChildren<Canvas>().worldCamera = Camera.main;
             _floorSO = floor;
             InitItems();
+            GetComponent<SortingGroup>().sortingLayerName = "Default";
         }
 
         private void InitItems()

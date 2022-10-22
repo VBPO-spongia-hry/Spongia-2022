@@ -11,11 +11,13 @@ namespace Tower
         public float levelHeight;
         public FloorSO[] floors;
         [SerializeField] private GameObject floorPrefab;
+        [SerializeField] private GameObject map;
         public static Tower Instance;
         private TowerCamera _towerCamera => GetComponentInChildren<TowerCamera>();
-        void Start()
+        private void Awake()
         {
             Instance = this;
+            Hide();
         }
 
         void Update()
@@ -24,6 +26,8 @@ namespace Tower
             {
                 StartCoroutine(NextFloorUnlocked());
             }
+            if (Input.GetKeyDown(KeyCode.Escape))
+                Hide();
         }
 
         public IEnumerator NextFloorUnlocked()
@@ -41,6 +45,18 @@ namespace Tower
             yield return new WaitForSeconds(_towerCamera.animationTime);
 
             floor.Init(level - 1, floors[level - 1]);
+        }
+
+        private void Hide()
+        {
+            gameObject.SetActive(false);
+            map.SetActive(true);
+        }
+
+        public static void Show()
+        {
+            Instance.gameObject.SetActive(true);
+            Instance.map.SetActive(false);
         }
     }
 }
