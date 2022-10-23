@@ -28,3 +28,5 @@ Rád by som všetko spojazdnil čo najskôr, aby sme nestrácali čas namiesto p
 1.Tiles zo vsetkych 3 stran(Trava,voda)
 2.Strom+lesny tile
 3.Flax+tile
+4.Clay tile(grass tile s kuskami hliny mozno)
+
