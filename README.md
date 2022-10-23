@@ -24,9 +24,4 @@ Rád by som všetko spojazdnil čo najskôr, aby sme nestrácali čas namiesto p
 [tech tree](https://docs.google.com/spreadsheets/d/1YrOJNCSg42M4qrdW6M4-VixxszYXsPnOivRYsxmLwBA/edit#gid=0)
 [Mechanika](https://docs.google.com/document/d/1eWJkwBysrTIPpjDZhwHpCY-owHBNe201osDEkZ3lEZM/edit?usp=sharing)
 
-# Co treba zrobit
-1.Tiles zo vsetkych 3 stran(Trava,voda)
-2.Strom+lesny tile
-3.Flax+tile
-4.Clay tile(grass tile s kuskami hliny mozno)
 
