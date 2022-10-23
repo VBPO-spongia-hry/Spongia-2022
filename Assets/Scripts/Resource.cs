@@ -33,10 +33,13 @@ public class Resource : MonoBehaviour
         if (distance < breakDistance)
         {
             _playerNear = true;
+            HintText.ShowHint(transform, "Mine resource", "LMB");
             activeResource = this;
         }
         else
         {
+            if (_playerNear)
+                HintText.HideHint();
             _playerNear = false;
             activeResource = null;
         }
