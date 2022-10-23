@@ -13,7 +13,7 @@ namespace Tower
 
         private void Start()
         {
-            transform.position = new Vector3(0, floorHeight / 2);
+            transform.localPosition = new Vector3(0, floorHeight / 2);
         }
 
         void Update()
@@ -32,7 +32,7 @@ namespace Tower
         public void Show(int targetFloor)
         {
             if (targetFloor < 0 || targetFloor >= Tower.Instance.level || targetFloor == _focusedFloor) return;
-            LeanTween.moveY(gameObject, floorHeight * targetFloor + floorHeight / 2, animationTime).setEaseOutCirc().setOnComplete(() =>
+            LeanTween.moveLocalY(gameObject, floorHeight * targetFloor + floorHeight / 2, animationTime).setEaseOutCirc().setOnComplete(() =>
             {
                 _focusedFloor = targetFloor;
                 // transform.position = new Vector3(0, floorHeight * targetFloor + floorHeight / 2);

@@ -19,5 +19,13 @@ public class PlayerController : MonoBehaviour
         var movement = new Vector2(horizontal, vertical);
 
         _rb.MovePosition(_rb.position + movement * moveSpeed * Time.deltaTime);
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Resource.activeResource?.Break();
+        }
+        if (Input.GetButtonUp("Fire1"))
+        {
+            Resource.activeResource?.StopBreaking();
+        }
     }
 }

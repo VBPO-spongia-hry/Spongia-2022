@@ -23,10 +23,10 @@ namespace Tower
 
         public void Init(int level, FloorSO floor)
         {
-            transform.position = new Vector3(0, (level - 1) * floorHeight);
+            transform.localPosition = new Vector3(0, (level - 1) * floorHeight);
             GetComponent<SortingGroup>().sortingLayerName = "Background";
             LeanTween.scale(gameObject, Vector3.one, animationTime).setEaseInOutCubic();
-            LeanTween.moveY(gameObject, transform.position.y + floorHeight, animationTime).setEaseSpring();
+            LeanTween.moveLocalY(gameObject, transform.localPosition.y + floorHeight, animationTime).setEaseSpring();
             GetComponentInChildren<Canvas>().worldCamera = Camera.main;
             _floorSO = floor;
             InitItems();
