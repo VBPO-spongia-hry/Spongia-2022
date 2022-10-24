@@ -2,32 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(HintObject))]
 public class TowerSwitcher : MonoBehaviour
 {
-    private bool _isPlayerNear;
+    private HintObject _hint;
+    private void Start()
+    {
+        _hint = GetComponent<HintObject>();
+    }
     private void Update()
     {
-        if (_isPlayerNear && Input.GetButtonDown("Interact"))
+        if (_hint.PlayerNear && Input.GetButtonDown("Interact"))
         {
             ShowTower();
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            _isPlayerNear = true;
-            HintText.ShowHint(transform, "Enter Tower", "E");
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            _isPlayerNear = false;
-            HintText.HideHint();
         }
     }
 

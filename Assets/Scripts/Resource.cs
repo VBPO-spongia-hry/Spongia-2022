@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(HintObject))]
 public class Resource : MonoBehaviour
 {
-    public static Transform player;
     [SerializeField] private Transform boneEffect;
     [SerializeField] private ItemSO drop;
     [SerializeField] private Sprite brokenSprite;
@@ -14,42 +14,29 @@ public class Resource : MonoBehaviour
     [SerializeField] private Slider slider;
     [SerializeField] private GameObject itemprefab;
     public static Resource activeResource;
-    private bool _playerNear = false;
     private bool _isBreaking = false;
     private bool _isBroken = false;
+    private HintObject _hint;
 
     private void Start()
     {
+        _hint = GetComponent<HintObject>();
         slider.maxValue = breakTime;
         slider.value = breakTime;
         slider.gameObject.SetActive(false);
-        player = FindObjectOfType<PlayerController>().transform;
     }
 
     private void Update()
     {
         if (_isBroken) return;
-        var distance = Vector2.Distance(transform.position, player.position);
-        if (distance < breakDistance)
-        {
-            _playerNear = true;
-            HintText.ShowHint(transform, "Mine resource", "LMB");
-            activeResource = this;
-        }
-        else
-        {
-            if (_playerNear)
-                HintText.HideHint();
-            _playerNear = false;
-            activeResource = null;
-        }
-        if (_isBreaking && !_playerNear)
+        activeResource = _hint.PlayerNear ? this : null;
+        if (_isBreaking && !_hint.PlayerNear)
             StopBreaking();
     }
 
     public void Break()
     {
-        if (!_playerNear || _isBroken) return;
+        if (!_hint.PlayerNear || _isBroken) return;
         _isBreaking = true;
         slider.gameObject.SetActive(true);
         StartCoroutine(StartBreaking());
@@ -81,6 +68,7 @@ public class Resource : MonoBehaviour
             GetComponentInChildren<SpriteRenderer>().sprite = brokenSprite;
         }
 
+        HintText.HideHint();
         if (drop != null)
         {
             var go = Instantiate(itemprefab, transform.position, Quaternion.identity);

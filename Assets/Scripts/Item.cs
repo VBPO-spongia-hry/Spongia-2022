@@ -6,7 +6,6 @@ public class Item : MonoBehaviour
 {
     [SerializeField] private ItemSO item;
     [SerializeField] private float throwDistance = .5f;
-
     public void Init(ItemSO itemSO)
     {
         this.item = itemSO;

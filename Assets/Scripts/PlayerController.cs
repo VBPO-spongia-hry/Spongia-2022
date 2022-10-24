@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rb;
     [SerializeField] private float moveSpeed;
-    void Start()
+    private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");

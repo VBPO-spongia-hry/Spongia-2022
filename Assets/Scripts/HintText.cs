@@ -27,6 +27,7 @@ public class HintText : MonoBehaviour
     {
         _group = GetComponent<CanvasGroup>();
         _instance = this;
+        HideHint();
     }
 
     private void Show(Transform focus, string message, string key)
