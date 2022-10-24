@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6612797976770485895}
   - component: {fileID: 7605210438876687850}
   - component: {fileID: 7738897824923097820}
+  - component: {fileID: 8242342466171157619}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -98,3 +99,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  throwDistance: 0.5
+--- !u!114 &8242342466171157619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8762611005009298879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0b07f4a435a79fda9ad7d738e82038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hintMessage: Pick Up
+  hintDistance: 0.5
+  hintKey: E
+  follow: {fileID: 6612797976770485895}

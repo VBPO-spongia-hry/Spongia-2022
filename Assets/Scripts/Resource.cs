@@ -10,7 +10,6 @@ public class Resource : MonoBehaviour
     [SerializeField] private ItemSO drop;
     [SerializeField] private Sprite brokenSprite;
     [SerializeField] private float breakTime = 5f;
-    [SerializeField] private float breakDistance = .8f;
     [SerializeField] private Slider slider;
     [SerializeField] private GameObject itemprefab;
     public static Resource activeResource;
@@ -66,6 +65,7 @@ public class Resource : MonoBehaviour
         {
             _isBroken = true;
             GetComponentInChildren<SpriteRenderer>().sprite = brokenSprite;
+            GetComponent<HintObject>().enabled = false;
         }
 
         HintText.HideHint();

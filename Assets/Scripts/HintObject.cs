@@ -40,4 +40,10 @@ public class HintObject : MonoBehaviour
         HintText.HideHint();
         _hintShown = false;
     }
+
+    private void OnDisable()
+    {
+        if (_hintShown)
+            HintText.HideHint();
+    }
 }

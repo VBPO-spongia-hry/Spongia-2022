@@ -1,0 +1,59 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Inventory : MonoBehaviour
+{
+    [SerializeField] private InventorySlot[] slots;
+    [SerializeField] private GameObject itemPrefab;
+    [SerializeField] private GameObject activeItemEffect;
+
+    private Transform _player;
+    private KeyCode[] keyCodes = {
+        KeyCode.Alpha1,
+        KeyCode.Alpha2,
+        KeyCode.Alpha3,
+        KeyCode.Alpha4,
+        KeyCode.Alpha5
+    };
+    private int _activeSlot;
+
+    private void Start()
+    {
+        _player = FindObjectOfType<PlayerController>().transform;
+    }
+
+    private void Update()
+    {
+        for (int i = 0; i < keyCodes.Length; i++)
+        {
+            if (Input.GetKeyDown(keyCodes[i]))
+                SetActiveItem(i);
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+            ThrowItem();
+    }
+
+    public void SetActiveItem(int index)
+    {
+        _activeSlot = index;
+        activeItemEffect.transform.SetParent(slots[index].transform, true);
+        activeItemEffect.transform.SetSiblingIndex(0);
+        LeanTween.moveX(activeItemEffect, slots[index].transform.position.x, .2f).setEaseInOutCirc();
+    }
+
+    public void PickUp(ItemSO item)
+    {
+        if (slots[_activeSlot].IsFull)
+            ThrowItem();
+        slots[_activeSlot].AssignItem(item);
+    }
+
+    private void ThrowItem()
+    {
+        if (!slots[_activeSlot].IsFull) return;
+        var item = slots[_activeSlot].ThrowItem();
+        var go = Instantiate(itemPrefab, _player.position, Quaternion.identity).GetComponent<Item>();
+        go.Init(item);
+    }
+}
