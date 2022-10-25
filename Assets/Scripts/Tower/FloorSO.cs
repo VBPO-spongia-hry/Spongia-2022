@@ -9,5 +9,6 @@ namespace Tower
     {
         public string[] items;
         public int level;
+        public Crafting.Ingredient[] neededToNextFloor;
     }
 }

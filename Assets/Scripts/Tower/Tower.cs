@@ -7,6 +7,7 @@ namespace Tower
 {
     public class Tower : MonoBehaviour
     {
+        public static bool TowerActive;
         public int level;
         public float levelHeight;
         public FloorSO[] floors;
@@ -49,12 +50,14 @@ namespace Tower
 
         private void Hide()
         {
+            TowerActive = false;
             gameObject.SetActive(false);
             map.SetActive(true);
         }
 
         public static void Show()
         {
+            TowerActive = true;
             Instance.gameObject.SetActive(true);
             Instance.map.SetActive(false);
         }

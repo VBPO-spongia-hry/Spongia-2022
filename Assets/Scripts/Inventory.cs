@@ -17,6 +17,8 @@ public class Inventory : MonoBehaviour
         KeyCode.Alpha5
     };
     private int _activeSlot;
+    private bool _isTowerActive => Tower.Tower.TowerActive;
+
 
     private void Start()
     {
@@ -32,6 +34,7 @@ public class Inventory : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Q))
             ThrowItem();
+        activeItemEffect.SetActive(!_isTowerActive);
     }
 
     public void SetActiveItem(int index)

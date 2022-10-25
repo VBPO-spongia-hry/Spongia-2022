@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField] private Image itemImage;
     private ItemSO _item;
 
     public bool IsFull => _item != null;
+
+    private bool TowerMode => Tower.Tower.TowerActive;
 
     public void AssignItem(ItemSO item)
     {
@@ -30,5 +33,11 @@ public class InventorySlot : MonoBehaviour
             itemImage.gameObject.SetActive(false);
         });
         return temp;
+    }
+
+    public void OnPointerEnter(PointerEventData data)
+    {
+        if (!TowerMode) return;
+        FindObjectOfType<Crafting.DragSlot>().Drag(this, data);
     }
 }
