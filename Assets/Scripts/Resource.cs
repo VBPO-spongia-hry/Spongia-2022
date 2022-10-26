@@ -28,14 +28,15 @@ public class Resource : MonoBehaviour
     private void Update()
     {
         if (_isBroken) return;
-        activeResource = _hint.PlayerNear ? this : null;
+        if (_hint.PlayerNear)
+            activeResource = this;
         if (_isBreaking && !_hint.PlayerNear)
             StopBreaking();
     }
 
     public void Break()
     {
-        if (!_hint.PlayerNear || _isBroken) return;
+        if (!_hint.PlayerNear || _isBroken || _isBreaking) return;
         _isBreaking = true;
         slider.gameObject.SetActive(true);
         StartCoroutine(StartBreaking());
@@ -69,6 +70,7 @@ public class Resource : MonoBehaviour
         }
 
         HintText.HideHint();
+        slider.gameObject.SetActive(false);
         if (drop != null)
         {
             var go = Instantiate(itemprefab, transform.position, Quaternion.identity);

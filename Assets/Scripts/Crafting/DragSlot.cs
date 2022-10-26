@@ -14,7 +14,7 @@ namespace Crafting
         private InventorySlot _from;
         private bool TowerMode => Tower.Tower.TowerActive;
 
-        public void Drag(InventorySlot from, PointerEventData data)
+        public void Drag(InventorySlot from)
         {
             if (!from.IsFull || _from != null) return;
             _from = from;
@@ -30,7 +30,7 @@ namespace Crafting
                 transform.position = eventData.position;
         }
 
-        void IEndDragHandler.OnEndDrag(PointerEventData eventData)
+        public void OnEndDrag(PointerEventData eventData)
         {
             if (TowerMode)
             {
@@ -39,8 +39,7 @@ namespace Crafting
                 {
                     LeanTween.move(gameObject, _from.transform.position, .5f).setEaseInOutCirc().setOnComplete(() =>
                     {
-                        _from.AssignItem(item);
-                        Clear();
+                        CancelDrag();
                     });
                 }
                 else
@@ -51,9 +50,10 @@ namespace Crafting
                     }
                     else
                     {
+                        var from = _from;
                         LeanTween.move(gameObject, _from.transform.position, .5f).setEaseInOutCirc().setOnComplete(() =>
                         {
-                            _from.AssignItem(item);
+                            from.AssignItem(item);
                             Clear();
                         });
                     }
@@ -64,6 +64,13 @@ namespace Crafting
                 FindObjectOfType<Inventory>().ThrowItem(item);
                 Clear();
             }
+        }
+
+        public void CancelDrag()
+        {
+            if (_from)
+                _from.AssignItem(item);
+            Clear();
         }
 
         private void Clear()

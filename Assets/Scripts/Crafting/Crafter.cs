@@ -57,5 +57,14 @@ namespace Crafting
 
             return true;
         }
+
+        public void OnResultTaken()
+        {
+            if (!resultSlot.IsFull) return;
+            if (FindObjectOfType<Inventory>().PickUp(recipe.result))
+            {
+                resultSlot.ThrowItem();
+            }
+        }
     }
 }

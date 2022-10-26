@@ -23,10 +23,6 @@ namespace Tower
 
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.U))
-            {
-                StartCoroutine(NextFloorUnlocked());
-            }
             if (Input.GetKeyDown(KeyCode.Escape))
                 Hide();
         }

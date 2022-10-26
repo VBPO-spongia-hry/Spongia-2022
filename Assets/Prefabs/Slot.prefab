@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemImage: {fileID: 4463502343564922941}
+  enableDrag: 0
 --- !u!114 &6575239035378558132
 MonoBehaviour:
   m_ObjectHideFlags: 0

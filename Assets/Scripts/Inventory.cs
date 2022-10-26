@@ -48,11 +48,26 @@ public class Inventory : MonoBehaviour
         LeanTween.moveX(activeItemEffect, slots[index].transform.position.x, .2f).setEaseInOutCirc();
     }
 
-    public void PickUp(ItemSO item)
+    public bool PickUp(ItemSO item)
     {
+        if (!GetEmptySlot()) return false;
         if (slots[_activeSlot].IsFull)
             ThrowItem();
         slots[_activeSlot].AssignItem(item);
+        return true;
+    }
+
+    private bool GetEmptySlot()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (!slots[i].IsFull)
+            {
+                SetActiveItem(i);
+                return true;
+            }
+        }
+        return false;
     }
 
     private void ThrowItem()

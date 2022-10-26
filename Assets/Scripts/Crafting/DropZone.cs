@@ -36,13 +36,9 @@ namespace Crafting
         private void Update()
         {
             if (IsPointerOverGameobject())
-            {
                 DragSlot.Zone = this;
-            }
-            else
-            {
+            else if (DragSlot.Zone == this)
                 DragSlot.Zone = null;
-            }
         }
 
         public void clear()
