@@ -23,6 +23,9 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         _player = FindObjectOfType<PlayerController>().transform;
+        SetActiveItem(0);
+        activeItemEffect.transform.localPosition = Vector3.zero;
+        LeanTween.cancel(activeItemEffect);
     }
 
     private void Update()
@@ -57,6 +60,14 @@ public class Inventory : MonoBehaviour
         if (!slots[_activeSlot].IsFull) return;
         var item = slots[_activeSlot].ThrowItem();
         var go = Instantiate(itemPrefab, _player.position, Quaternion.identity).GetComponent<Item>();
-        go.Init(item);
+        var offset = Random.onUnitSphere;
+        go.Init(item, new Vector3(offset.x, offset.y));
+    }
+
+    public void ThrowItem(ItemSO item)
+    {
+        var go = Instantiate(itemPrefab, _player.position, Quaternion.identity).GetComponent<Item>();
+        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        go.Init(item, (mousePos - _player.position).normalized);
     }
 }

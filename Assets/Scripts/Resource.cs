@@ -72,7 +72,7 @@ public class Resource : MonoBehaviour
         if (drop != null)
         {
             var go = Instantiate(itemprefab, transform.position, Quaternion.identity);
-            go.GetComponent<Item>().Init(drop);
+            go.GetComponent<Item>().Init(drop, Random.onUnitSphere);
         }
     }
 }

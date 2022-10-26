@@ -11,8 +11,6 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler
 
     public bool IsFull => _item != null;
 
-    private bool TowerMode => Tower.Tower.TowerActive;
-
     public void AssignItem(ItemSO item)
     {
         _item = item;
@@ -37,7 +35,6 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler
 
     public void OnPointerEnter(PointerEventData data)
     {
-        if (!TowerMode) return;
         FindObjectOfType<Crafting.DragSlot>().Drag(this, data);
     }
 }

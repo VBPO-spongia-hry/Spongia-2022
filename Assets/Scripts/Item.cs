@@ -15,12 +15,11 @@ public class Item : MonoBehaviour
         _hint = GetComponent<HintObject>();
     }
 
-    public void Init(ItemSO itemSO)
+    public void Init(ItemSO itemSO, Vector3 offset)
     {
         this.item = itemSO;
         GetComponent<SpriteRenderer>().sprite = item.icon;
-        var offset = Random.insideUnitCircle;
-        LeanTween.move(gameObject, transform.position + throwDistance * new Vector3(offset.x, offset.y), .5f).setEaseOutCirc();
+        LeanTween.move(gameObject, transform.position + throwDistance * offset, .5f).setEaseOutCirc();
     }
 
     private void PickUp()
