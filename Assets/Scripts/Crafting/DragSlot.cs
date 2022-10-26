@@ -35,30 +35,43 @@ namespace Crafting
             if (TowerMode)
             {
                 if (_from == null) return;
-                LeanTween.move(gameObject, _from.transform.position, .5f).setEaseInOutCirc().setOnComplete(() =>
+                if (Zone == null)
                 {
-                    if (Zone == null)
+                    LeanTween.move(gameObject, _from.transform.position, .5f).setEaseInOutCirc().setOnComplete(() =>
                     {
                         _from.AssignItem(item);
+                        Clear();
+                    });
+                }
+                else
+                {
+                    if (Zone.Drop(item))
+                    {
+                        Clear();
                     }
                     else
                     {
-                        Zone.Drop(item);
+                        LeanTween.move(gameObject, _from.transform.position, .5f).setEaseInOutCirc().setOnComplete(() =>
+                        {
+                            _from.AssignItem(item);
+                            Clear();
+                        });
                     }
-                    item = null;
-                    itemImage.enabled = false;
-                    itemImage.sprite = null;
-                    _from = null;
-                });
+                }
             }
             else
             {
                 FindObjectOfType<Inventory>().ThrowItem(item);
-                item = null;
-                itemImage.enabled = false;
-                itemImage.sprite = null;
-                _from = null;
+                Clear();
             }
+        }
+
+        private void Clear()
+        {
+            itemImage.sprite = null;
+            itemImage.enabled = false;
+            _from = null;
+            item = null;
         }
     }
 }

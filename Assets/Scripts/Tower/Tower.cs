@@ -61,5 +61,10 @@ namespace Tower
             Instance.gameObject.SetActive(true);
             Instance.map.SetActive(false);
         }
+
+        public static void UnlockNextFloor()
+        {
+            Instance.StartCoroutine(Instance.NextFloorUnlocked());
+        }
     }
 }
