@@ -51,9 +51,10 @@ namespace Crafting
                     else
                     {
                         var from = _from;
+                        var item2 = item;
                         LeanTween.move(gameObject, _from.transform.position, .5f).setEaseInOutCirc().setOnComplete(() =>
                         {
-                            from.AssignItem(item);
+                            from.AssignItem(item2);
                             Clear();
                         });
                     }

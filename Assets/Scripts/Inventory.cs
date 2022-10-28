@@ -35,7 +35,7 @@ public class Inventory : MonoBehaviour
             if (Input.GetKeyDown(keyCodes[i]))
                 SetActiveItem(i);
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && !Tower.Tower.TowerActive)
             ThrowItem();
         activeItemEffect.SetActive(!_isTowerActive);
     }

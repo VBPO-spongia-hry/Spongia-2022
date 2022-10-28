@@ -22,13 +22,21 @@ namespace Crafting
         {
             acceptsImage.sprite = accepts.icon;
             _crafter = GetComponentInParent<Crafter>();
+            countText.text = $"0/{capacity}";
+            acceptsImage.color = new Color(0, 0, 0, .2f);
+            _crafter.onCraftingComplete += () =>
+            {
+                countText.text = $"0/{capacity}";
+                acceptsImage.color = new Color(0, 0, 0, .2f);
+            };
         }
 
         public bool Drop(ItemSO item)
         {
             if (item.name != accepts.name || count == capacity) return false;
             count++;
-            countText.text = count.ToString();
+            acceptsImage.color = new Color(1, 1, 1, 1);
+            countText.text = count.ToString() + "/" + capacity.ToString();
             _crafter.OnZoneUpdated();
             return true;
         }
@@ -41,22 +49,21 @@ namespace Crafting
                 DragSlot.Zone = null;
         }
 
-        public void clear()
+        public void Clear()
         {
             count = 0;
-            countText.text = "0";
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
             DragSlot.Zone = this;
-            LeanTween.scale(gameObject, Vector3.one * 1.2f, .3f).setEaseInCirc();
+            LeanTween.scale(gameObject, Vector3.one * 1.01f, .3f).setEaseInCirc();
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
             DragSlot.Zone = null;
-            LeanTween.scale(gameObject, Vector3.one * .8f, .3f).setEaseInCirc();
+            LeanTween.scale(gameObject, Vector3.one, .3f).setEaseInCirc();
         }
 
         private bool IsPointerOverGameobject()
