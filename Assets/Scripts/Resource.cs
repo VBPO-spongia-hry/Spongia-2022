@@ -20,6 +20,10 @@ public class Resource : MonoBehaviour
     private void Start()
     {
         _hint = GetComponent<HintObject>();
+        _hint.OnHintShow += () =>
+        {
+            activeResource = this;
+        };
         slider.maxValue = breakTime;
         slider.value = breakTime;
         slider.gameObject.SetActive(false);
@@ -28,8 +32,6 @@ public class Resource : MonoBehaviour
     private void Update()
     {
         if (_isBroken) return;
-        if (_hint.PlayerNear)
-            activeResource = this;
         if (_isBreaking && !_hint.PlayerNear)
             StopBreaking();
     }
@@ -69,7 +71,7 @@ public class Resource : MonoBehaviour
             GetComponent<HintObject>().enabled = false;
         }
 
-        HintText.HideHint();
+
         slider.gameObject.SetActive(false);
         if (drop != null)
         {

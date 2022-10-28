@@ -258,7 +258,6 @@ MonoBehaviour:
   drop: {fileID: 11400000, guid: e5a12ab49cc828ff8aeeb99ac7177094, type: 2}
   brokenSprite: {fileID: 21300000, guid: d8f13471191a3ef3db71f29e3d1cb14a, type: 3}
   breakTime: 10
-  breakDistance: 0.8
   slider: {fileID: 1447068832501886812}
   itemprefab: {fileID: 8762611005009298879, guid: deb4cb98a0c52bff19d18aa92f192672, type: 3}
 --- !u!212 &1447068832595044225
@@ -361,8 +360,8 @@ MonoBehaviour:
   - {fileID: 1447068833434195407}
   - {fileID: 1447068832987860257}
   m_Bounds:
-    m_Center: {x: -0.0022054315, y: -0.0011202544, z: 0}
-    m_Extent: {x: 0.29493973, y: 0.24268806, z: 0}
+    m_Center: {x: -0.0022052526, y: -0.0011201948, z: 0}
+    m_Extent: {x: 0.29493973, y: 0.242688, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -392,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hintMessage: Mine Berry bush
-  hintDistance: 0.5
+  hintDistance: 1.5
   hintKey: LMB
   follow: {fileID: 1447068832595044226}
 --- !u!1 &1447068832987860258

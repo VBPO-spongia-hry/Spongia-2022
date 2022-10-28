@@ -26,7 +26,7 @@ public class Item : MonoBehaviour
     {
         if (FindObjectOfType<Inventory>().PickUp(item))
         {
-            HintText.HideHint();
+            HintText.HideHint(transform);
             Destroy(gameObject);
         }
     }
