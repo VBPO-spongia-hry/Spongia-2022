@@ -13,8 +13,9 @@ namespace Tower
         [SerializeField] private GameObject itemUIPrefab;
         [SerializeField] private Transform itemsContainer;
         [SerializeField] private TextMeshProUGUI selectedItem;
+        [SerializeField] private TextMeshProUGUI nameText;
         private float floorHeight => Tower.Instance.levelHeight;
-        private FloorSO _floorSO;
+        [SerializeField] private FloorSO floorSO;
 
         private void Start()
         {
@@ -25,31 +26,33 @@ namespace Tower
         {
             transform.localPosition = new Vector3(0, (level - 1) * floorHeight);
             GetComponent<SortingGroup>().sortingLayerName = "Background";
+            nameText.text = floor.floorName;
             LeanTween.scale(gameObject, Vector3.one, animationTime).setEaseInOutCubic();
             LeanTween.moveLocalY(gameObject, transform.localPosition.y + floorHeight, animationTime).setEaseSpring();
             GetComponentInChildren<Canvas>().worldCamera = Camera.main;
-            _floorSO = floor;
+            floorSO = floor;
             InitItems();
             GetComponent<SortingGroup>().sortingLayerName = "Default";
+            GetComponentInChildren<Crafting.Crafter>().InitCrafter(floor.recipe);
         }
 
         private void InitItems()
         {
-            if (_floorSO.items.Length == 0)
-                Destroy(GetComponentInChildren<Canvas>().gameObject);
-            for (int i = 0; i < _floorSO.items.Length; i++)
+            if (floorSO.items.Length == 0)
+                Destroy(itemsContainer.gameObject);
+            for (int i = 0; i < floorSO.items.Length; i++)
             {
                 var btn = Instantiate(itemUIPrefab, itemsContainer).GetComponent<Button>();
                 var idx = i;
                 btn.onClick.AddListener(() => selectItem(idx));
-                btn.GetComponentInChildren<TextMeshProUGUI>().text = _floorSO.items[i];
+                btn.GetComponentInChildren<TextMeshProUGUI>().text = floorSO.items[i];
                 LeanTween.scale(btn.gameObject, 1.07f * Vector3.one, 1.5f).setEaseInOutSine().setLoopPingPong();
             }
         }
 
         private void selectItem(int i)
         {
-            selectedItem.text = _floorSO.items[i];
+            selectedItem.text = floorSO.items[i];
             selectedItem.gameObject.SetActive(true);
             LeanTween.alphaCanvas(itemsContainer.GetComponent<CanvasGroup>(), 0, .5f).setOnComplete(() =>
             {

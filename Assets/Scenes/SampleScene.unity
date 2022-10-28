@@ -507,89 +507,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308985615}
   m_CullTransparentMesh: 1
---- !u!1 &400399395 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3969308556430650483, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
-  m_PrefabInstance: {fileID: 6896527009675065645}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &400399397 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 722267453308311289, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
-  m_PrefabInstance: {fileID: 6896527009675065645}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400399395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &400399400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400399395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 400399397}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 878655655}
-        m_TargetAssemblyTypeName: Crafting.Crafter, Assembly-CSharp
-        m_MethodName: OnResultTaken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &400399402 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2761302614055549895, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
-  m_PrefabInstance: {fileID: 6896527009675065645}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400399395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 634e8eb0e3edc56af9482a707c890638, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &416524350
 GameObject:
   m_ObjectHideFlags: 3
@@ -1291,17 +1208,6 @@ MonoBehaviour:
   - {fileID: 1079306305}
   itemPrefab: {fileID: 8762611005009298879, guid: deb4cb98a0c52bff19d18aa92f192672, type: 3}
   activeItemEffect: {fileID: 1855434294}
---- !u!114 &878655655 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4400033677700166989, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
-  m_PrefabInstance: {fileID: 6896527009675065645}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35f168e5e8b523fc283f9633424621ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1025064048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +1571,7 @@ MonoBehaviour:
   levelHeight: 12
   floors:
   - {fileID: 11400000, guid: 86339b232bc74037a8ee737814348fc0, type: 2}
-  - {fileID: 11400000, guid: 86339b232bc74037a8ee737814348fc0, type: 2}
+  - {fileID: 11400000, guid: 99bfeec46b0337d3e899312e22c46e24, type: 2}
   - {fileID: 11400000, guid: 86339b232bc74037a8ee737814348fc0, type: 2}
   - {fileID: 11400000, guid: 86339b232bc74037a8ee737814348fc0, type: 2}
   - {fileID: 11400000, guid: 86339b232bc74037a8ee737814348fc0, type: 2}
@@ -13362,9 +13268,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1079708434}
     m_Modifications:
+    - target: {fileID: 776738739264945936, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
+      propertyPath: m_ChildAlignment
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3248445145023835095, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275177974236749776, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
+      propertyPath: m_text
+      value: Build next floor
       objectReference: {fileID: 0}
     - target: {fileID: 3446439593114839472, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
       propertyPath: m_AnchorMax.y
@@ -13393,7 +13307,7 @@ PrefabInstance:
     - target: {fileID: 4400033677700166989, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
       propertyPath: resultSlot
       value: 
-      objectReference: {fileID: 400399402}
+      objectReference: {fileID: 0}
     - target: {fileID: 4982235497977083486, guid: 32ca98dc8f5c0d6e3b2dd85f578fccba, type: 3}
       propertyPath: m_Enabled
       value: 0

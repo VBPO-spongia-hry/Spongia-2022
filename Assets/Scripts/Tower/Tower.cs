@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace Tower
 {
     public class Tower : MonoBehaviour
@@ -19,6 +18,16 @@ namespace Tower
         {
             Instance = this;
             Hide();
+        }
+
+        private void Start()
+        {
+            Crafting.CraftingRecipe[] unlockRecipes = new Crafting.CraftingRecipe[floors.Length];
+            for (int i = 0; i < floors.Length; i++)
+            {
+                unlockRecipes[i] = floors[i].unlockRecipe;
+            }
+            GetComponentInChildren<Crafting.Crafter>().InitFloorCrafter(unlockRecipes);
         }
 
         void Update()

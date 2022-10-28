@@ -8,27 +8,50 @@ namespace Crafting
 {
     public class Crafter : MonoBehaviour
     {
-        [SerializeField] private CraftingRecipe recipe;
+        private CraftingRecipe recipe;
+        [SerializeField] private GameObject craftingSlotPrefab;
+        [SerializeField] private GameObject resultSlotPrefab;
         [SerializeField] private Slider craftingSlider;
-        [SerializeField] private Image resultPreview;
+        private Image resultPreview;
         private DropZone[] _slots;
-        public InventorySlot resultSlot;
+        private InventorySlot resultSlot;
+        private CraftingRecipe[] _floorRecipes;
+        private int _recipeIndex = 0;
         public event Action onCraftingComplete;
 
-        private void Start()
+        public void InitFloorCrafter(CraftingRecipe[] floorRecipes)
         {
-            _slots = GetComponentsInChildren<DropZone>();
+            _floorRecipes = floorRecipes;
+            InitCrafter(floorRecipes[0]);
+            onCraftingComplete += () =>
+            {
+                _recipeIndex++;
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    Destroy(transform.GetChild(i).gameObject);
+                }
+                InitCrafter(_floorRecipes[_recipeIndex]);
+            };
+        }
+
+        public void InitCrafter(CraftingRecipe recipe)
+        {
             craftingSlider.gameObject.SetActive(false);
-            if (_slots.Length != recipe.ingredients.Length)
-                Debug.LogError("Invalid number of slots for recipe");
+            this.recipe = recipe;
+            if (recipe == null)
+                return;
+            _slots = new DropZone[recipe.ingredients.Length];
             for (int i = 0; i < _slots.Length; i++)
             {
+                _slots[i] = Instantiate(craftingSlotPrefab, transform).GetComponent<DropZone>();
                 _slots[i].accepts = recipe.ingredients[i].item;
                 _slots[i].capacity = recipe.ingredients[i].count;
                 _slots[i].Init();
             }
             if (recipe.result)
             {
+                resultSlot = Instantiate(resultSlotPrefab, transform).GetComponent<InventorySlot>();
+                resultPreview = resultSlot.transform.Find("ResultPreview").GetComponent<Image>();
                 resultPreview.sprite = recipe.result.icon;
             }
         }
