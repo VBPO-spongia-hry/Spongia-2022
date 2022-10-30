@@ -36,6 +36,8 @@ public class Resource : MonoBehaviour
         if (_isBroken) return;
         if (_isBreaking && activeResource != this)
             StopBreaking();
+        if (!_isBreaking)
+            boneEffect.rotation = _initialBoneRotation;
     }
 
     public void Break()
@@ -49,7 +51,6 @@ public class Resource : MonoBehaviour
     public void StopBreaking()
     {
         LeanTween.cancel(gameObject);
-        boneEffect.rotation = _initialBoneRotation;
         StopAllCoroutines();
         _isBreaking = false;
         slider.value = breakTime;
