@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        Application.targetFrameRate = 300;
     }
 
     private void FixedUpdate()
