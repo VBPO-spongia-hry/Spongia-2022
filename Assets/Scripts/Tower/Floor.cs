@@ -42,11 +42,13 @@ namespace Tower
                 Destroy(itemsContainer.gameObject);
             for (int i = 0; i < floorSO.items.Length; i++)
             {
-                var btn = Instantiate(itemUIPrefab, itemsContainer).GetComponent<Button>();
+                var btn = Instantiate(itemUIPrefab, itemsContainer).GetComponentInChildren<Button>();
                 var idx = i;
                 btn.onClick.AddListener(() => selectItem(idx));
                 btn.GetComponentInChildren<TextMeshProUGUI>().text = floorSO.items[i];
                 LeanTween.scale(btn.gameObject, 1.07f * Vector3.one, 1.5f).setEaseInOutSine().setLoopPingPong();
+                LeanTween.rotateZ(btn.transform.parent.Find("LightEffect").gameObject, 180f, 20f).setLoopClamp();
+                LeanTween.scale(btn.transform.parent.Find("LightEffect").gameObject, 1.2f * Vector3.one, 20f).setLoopPingPong();
             }
         }
 

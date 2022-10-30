@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Crafting
 {
-    public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class DropZone : MonoBehaviour
     {
         public ItemSO accepts;
         private int count;
@@ -40,13 +40,16 @@ namespace Crafting
             _crafter.OnZoneUpdated();
             return true;
         }
-
+        private bool _pointerOver;
         private void Update()
         {
             if (IsPointerOverGameobject())
-                DragSlot.Zone = this;
-            else if (DragSlot.Zone == this)
-                DragSlot.Zone = null;
+            {
+                if (!_pointerOver)
+                    OnPointerEnter();
+            }
+            else if (_pointerOver)
+                OnPointerExit();
         }
 
         public void Clear()
@@ -54,16 +57,20 @@ namespace Crafting
             count = 0;
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public void OnPointerEnter()
         {
+            _pointerOver = true;
             DragSlot.Zone = this;
-            LeanTween.scale(gameObject, Vector3.one * 1.01f, .3f).setEaseInCirc();
+            LeanTween.scale(gameObject, Vector3.one * 1.05f, .3f).setEaseInCirc();
+            LeanTween.color(gameObject, Color.yellow, .3f);
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public void OnPointerExit()
         {
+            _pointerOver = false;
             DragSlot.Zone = null;
             LeanTween.scale(gameObject, Vector3.one, .3f).setEaseInCirc();
+            LeanTween.color(gameObject, Color.white, .3f);
         }
 
         private bool IsPointerOverGameobject()
