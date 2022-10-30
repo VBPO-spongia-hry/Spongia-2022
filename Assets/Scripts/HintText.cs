@@ -114,7 +114,7 @@ public class HintText : MonoBehaviour
         Hint? ret = null;
         foreach (var hint in _hintsToShow)
         {
-            var dist = Vector3.Distance(hint.Key.position, _player.position);
+            var dist = Physics2D.Distance(hint.Key.GetComponent<Collider2D>(), _player.GetComponent<Collider2D>()).distance;
             if (dist < minDist)
             {
                 minDist = dist;

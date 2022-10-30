@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace Tower
 {
@@ -12,12 +13,15 @@ namespace Tower
         public FloorSO[] floors;
         [SerializeField] private GameObject floorPrefab;
         [SerializeField] private GameObject map;
+        [SerializeField] private PlayableDirector cutsceneEnterController;
+        [SerializeField] private PlayableDirector cutsceneExitController;
         public static Tower Instance;
         private TowerCamera _towerCamera => GetComponentInChildren<TowerCamera>();
         private void Awake()
         {
             Instance = this;
-            Hide();
+            gameObject.SetActive(false);
+            // Hide();  
         }
 
         private void Start()
@@ -56,15 +60,13 @@ namespace Tower
         private void Hide()
         {
             TowerActive = false;
-            gameObject.SetActive(false);
-            map.SetActive(true);
+            cutsceneExitController.Play();
         }
 
         public static void Show()
         {
             TowerActive = true;
-            Instance.gameObject.SetActive(true);
-            Instance.map.SetActive(false);
+            Instance.cutsceneEnterController.Play();
         }
 
         public static void UnlockNextFloor()

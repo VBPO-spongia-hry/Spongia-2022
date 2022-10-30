@@ -16,10 +16,12 @@ public class Resource : MonoBehaviour
     private bool _isBreaking = false;
     private bool _isBroken = false;
     private HintObject _hint;
+    private Quaternion _initialBoneRotation;
 
     private void Start()
     {
         _hint = GetComponent<HintObject>();
+        _initialBoneRotation = boneEffect.transform.rotation;
         _hint.OnHintShow += () =>
         {
             activeResource = this;
@@ -32,7 +34,7 @@ public class Resource : MonoBehaviour
     private void Update()
     {
         if (_isBroken) return;
-        if (_isBreaking && !_hint.PlayerNear)
+        if (_isBreaking && activeResource != this)
             StopBreaking();
     }
 
@@ -46,6 +48,8 @@ public class Resource : MonoBehaviour
 
     public void StopBreaking()
     {
+        LeanTween.cancel(gameObject);
+        boneEffect.rotation = _initialBoneRotation;
         StopAllCoroutines();
         _isBreaking = false;
         slider.value = breakTime;
