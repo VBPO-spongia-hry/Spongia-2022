@@ -27,7 +27,8 @@ public class Resource : MonoBehaviour
         _hint = GetComponent<HintObject>();
         _audio = GetComponent<AudioSource>();
         _inventory = FindObjectOfType<Inventory>();
-        _initialBoneRotation = boneEffect.transform.rotation;
+        if(boneEffect != null)
+            _initialBoneRotation = boneEffect.transform.rotation;
         _hint.OnHintShow += () =>
         {
             activeResource = this;
@@ -46,7 +47,7 @@ public class Resource : MonoBehaviour
         }
         if ((_isBreaking && activeResource != this) || _hint.IsDisabled)
             StopBreaking();
-        if (!_isBreaking)
+        if (!_isBreaking && boneEffect != null)
             boneEffect.rotation = _initialBoneRotation;
     }
 
@@ -74,7 +75,8 @@ public class Resource : MonoBehaviour
         {
             time--;
             slider.value = time;
-            LeanTween.rotateLocal(boneEffect.gameObject, Vector3.forward * Random.Range(-20f, 20f), .2f).setEaseShake();
+            if(boneEffect != null)
+                LeanTween.rotateLocal(boneEffect.gameObject, Vector3.forward * Random.Range(-20f, 20f), .2f).setEaseShake();
             _audio.clip = chopClips[Random.Range(0, chopClips.Length)];
             _audio.Play();
             yield return new WaitForSeconds(1);
