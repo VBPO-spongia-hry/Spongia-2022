@@ -1022,7 +1022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8115982371372978112, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
       propertyPath: m_Name
-      value: BerryBush (2)
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 8115982371372978113, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
       propertyPath: m_RootOrder
@@ -1030,11 +1030,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8115982371372978113, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.33
+      value: 3.36
       objectReference: {fileID: 0}
     - target: {fileID: 8115982371372978113, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.33
+      value: -6.87
       objectReference: {fileID: 0}
     - target: {fileID: 8115982371372978113, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1066,6 +1066,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8115982371372978113, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115982371372978114, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 46c74d9b17ba8b54d93a409da64ee3f1, type: 3}
+    - target: {fileID: 8115982371372978115, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
+      propertyPath: drop
+      value: 
+      objectReference: {fileID: 11400000, guid: 8a15b6cbeded6ff4b9ba6070145c4283, type: 2}
+    - target: {fileID: 8115982371372978115, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
+      propertyPath: brokenSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f61bfeb26d98412438ffdcd92e303804, type: 3}
+    - target: {fileID: 8115982371372978117, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: -0.0022055507
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115982371372978117, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
+      propertyPath: m_Bounds.m_Center.y
+      value: -0.001119718
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115982371372978117, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
+      propertyPath: m_Bounds.m_Extent.y
+      value: 0.242688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115982371372978117, guid: c0565c2c2bf5bff9d9172f25dfb51041, type: 3}
+      propertyPath: m_BoneTransforms.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
