@@ -9,14 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ffe8888c4ba0ac4b06bf3865ef29fb, type: 3}
-  m_Name: Floor
+  m_Script: {fileID: 11500000, guid: 2b28004879753b9d08c5c35a7cf367cd, type: 3}
+  m_Name: Level1
   m_EditorClassIdentifier: 
-  floorName: 1st Floor - upgrade tower
-  items:
-  - Item1
-  - Item2
-  - Item3
-  level: 2
-  recipe: {fileID: 0}
-  unlockRecipe: {fileID: 11400000, guid: 73294fcac34437140b54a25d63b66468, type: 2}
+  result: {fileID: 0}
+  ingredients:
+  - item: {fileID: 11400000, guid: 8a15b6cbeded6ff4b9ba6070145c4283, type: 2}
+    count: 4
+  craftingTime: 3
