@@ -46,6 +46,7 @@ namespace Crafting
                 {
                     if (Zone.Drop(item))
                     {
+                        // TODO: replace filledBucket with empty bucket
                         Clear();
                     }
                     else

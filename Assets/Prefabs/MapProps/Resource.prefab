@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneEffect: {fileID: 0}
+  toolToHarvest: {fileID: 0}
   drop: {fileID: 0}
   brokenSprite: {fileID: 0}
   breakTime: 10
@@ -378,10 +379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc0b07f4a435a79fda9ad7d738e82038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintMessage: Mine Berry bush
+  hintMessage: Mine Resource
   hintDistance: 1.5
   hintKey: LMB
   follow: {fileID: 1447068832595044226}
+  disabledHintMessage: The tool is needed to mine this
 --- !u!82 &1954307647122407863
 AudioSource:
   m_ObjectHideFlags: 0

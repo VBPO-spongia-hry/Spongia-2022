@@ -11,6 +11,7 @@ public class InventorySlot : MonoBehaviour
     private ItemSO _item;
 
     public bool IsFull => _item != null;
+    public ItemSO Item => _item;
 
     public void AssignItem(ItemSO item)
     {
@@ -20,6 +21,12 @@ public class InventorySlot : MonoBehaviour
         itemImage.transform.localScale = Vector3.one * .8f;
         LeanTween.cancel(itemImage.gameObject);
         LeanTween.scale(itemImage.gameObject, Vector3.one, .5f).setEaseOutBounce();
+    }
+
+    public void ReplaceItem(ItemSO item)
+    {
+        _item = item;
+        itemImage.sprite = item.icon;
     }
 
     public ItemSO ThrowItem()

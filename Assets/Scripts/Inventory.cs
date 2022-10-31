@@ -20,6 +20,7 @@ public class Inventory : MonoBehaviour
     private int _activeSlot;
     private bool _isTowerActive => Tower.Tower.TowerActive;
 
+    public ItemSO ActiveTool => slots[_activeSlot].Item;
 
     private void Start()
     {
@@ -86,5 +87,10 @@ public class Inventory : MonoBehaviour
         var go = Instantiate(itemPrefab, _player.position, Quaternion.identity).GetComponent<Item>();
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         go.Init(item, (mousePos - _player.position).normalized);
+    }
+
+    public void ReplaceActiveItem(ItemSO item)
+    {
+        slots[_activeSlot].ReplaceItem(item);
     }
 }

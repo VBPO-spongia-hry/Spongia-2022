@@ -9,10 +9,12 @@ public class HintObject : MonoBehaviour
     [SerializeField] private float hintDistance;
     [SerializeField] private string hintKey;
     [SerializeField] private Transform follow;
+    [SerializeField] private string disabledHintMessage;
     private Transform _player;
     private bool _hintShown;
 
     public bool PlayerNear => _hintShown;
+    [NonSerialized] public bool IsDisabled;
     public event Action OnHintShow;
 
     private void Start()
@@ -26,7 +28,10 @@ public class HintObject : MonoBehaviour
         var dist = Vector2.Distance(_player.position, transform.position);
         if (dist < hintDistance)
         {
-            HintText.ShowHint(follow, hintMessage, hintKey, () => OnHintShow?.Invoke());
+            if (IsDisabled)
+                HintText.ShowHint(follow, disabledHintMessage, "Lock", OnHintShown);
+            else
+                HintText.ShowHint(follow, hintMessage, hintKey, OnHintShown);
             _hintShown = true;
         }
         else
@@ -41,6 +46,12 @@ public class HintObject : MonoBehaviour
     {
         HintText.HideHint(follow);
         _hintShown = false;
+    }
+
+    private void OnHintShown()
+    {
+        if (!IsDisabled)
+            OnHintShow?.Invoke();
     }
 
     private void OnDisable()

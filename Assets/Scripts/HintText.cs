@@ -69,6 +69,7 @@ public class HintText : MonoBehaviour
     public static void ShowHint(Transform focus, string message, string key, Action onShow)
     {
         if (_hintShown) return;
+        var msg = _hintsToShow.ContainsKey(focus) ? _hintsToShow[focus].message : "";
         _hintsToShow[focus] = new Hint
         {
             follow = focus,
@@ -76,6 +77,8 @@ public class HintText : MonoBehaviour
             message = message,
             onShow = onShow
         };
+        if (msg != message)
+            _instance._forceHintUpdate = true;
         // _instance.Show(focus, message, key);
         // _hintShown = true;
     }
@@ -86,13 +89,15 @@ public class HintText : MonoBehaviour
         _hintsToShow.Remove(focus);
     }
     private Hint? _lastHint;
+    private bool _forceHintUpdate;
     private void Update()
     {
         var hint = GetClosestHint();
         if (hint.HasValue)
         {
-            if (!_lastHint.HasValue || hint.Value.follow != _lastHint.Value.follow)
+            if (!_lastHint.HasValue || hint.Value.follow != _lastHint.Value.follow || _forceHintUpdate)
             {
+                _forceHintUpdate = false;
                 Hide();
                 Show(hint.Value);
             }

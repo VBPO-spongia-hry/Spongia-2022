@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Resource : MonoBehaviour
 {
     [SerializeField] private Transform boneEffect;
+    [SerializeField] private ItemSO toolToHarvest;
     [SerializeField] private ItemSO drop;
     [SerializeField] private Sprite brokenSprite;
     [SerializeField] private float breakTime = 5f;
@@ -19,11 +20,13 @@ public class Resource : MonoBehaviour
     private HintObject _hint;
     private Quaternion _initialBoneRotation;
     private AudioSource _audio;
+    private Inventory _inventory;
 
     private void Start()
     {
         _hint = GetComponent<HintObject>();
         _audio = GetComponent<AudioSource>();
+        _inventory = FindObjectOfType<Inventory>();
         _initialBoneRotation = boneEffect.transform.rotation;
         _hint.OnHintShow += () =>
         {
@@ -37,7 +40,11 @@ public class Resource : MonoBehaviour
     private void Update()
     {
         if (_isBroken) return;
-        if (_isBreaking && activeResource != this)
+        if (toolToHarvest != null)
+        {
+            _hint.IsDisabled = _inventory.ActiveTool != toolToHarvest;
+        }
+        if ((_isBreaking && activeResource != this) || _hint.IsDisabled)
             StopBreaking();
         if (!_isBreaking)
             boneEffect.rotation = _initialBoneRotation;
