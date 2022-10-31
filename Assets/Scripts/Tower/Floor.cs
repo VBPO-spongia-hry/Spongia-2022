@@ -14,6 +14,7 @@ namespace Tower
         [SerializeField] private Transform itemsContainer;
         [SerializeField] private TextMeshProUGUI selectedItem;
         [SerializeField] private TextMeshProUGUI nameText;
+        [SerializeField] private GameObject dirtEffect;
         private float floorHeight => Tower.Instance.levelHeight;
         [SerializeField] private FloorSO floorSO;
 
@@ -25,10 +26,14 @@ namespace Tower
         public void Init(int level, FloorSO floor)
         {
             transform.localPosition = new Vector3(0, (level - 1) * floorHeight);
+            Destroy(dirtEffect, 3);
             GetComponent<SortingGroup>().sortingLayerName = "Background";
             nameText.text = floor.floorName;
             LeanTween.scale(gameObject, Vector3.one, animationTime).setEaseInOutCubic();
-            LeanTween.moveLocalY(gameObject, transform.localPosition.y + floorHeight, animationTime).setEaseSpring();
+            LeanTween.moveLocalY(gameObject, transform.localPosition.y + floorHeight, animationTime).setEaseSpring().setOnComplete(() =>
+            {
+                dirtEffect.SetActive(true);
+            });
             GetComponentInChildren<Canvas>().worldCamera = Camera.main;
             floorSO = floor;
             InitItems();
