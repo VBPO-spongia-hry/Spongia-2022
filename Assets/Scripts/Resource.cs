@@ -12,15 +12,18 @@ public class Resource : MonoBehaviour
     [SerializeField] private float breakTime = 5f;
     [SerializeField] private Slider slider;
     [SerializeField] private GameObject itemprefab;
+    [SerializeField] private AudioClip[] chopClips;
     public static Resource activeResource;
     private bool _isBreaking = false;
     private bool _isBroken = false;
     private HintObject _hint;
     private Quaternion _initialBoneRotation;
+    private AudioSource _audio;
 
     private void Start()
     {
         _hint = GetComponent<HintObject>();
+        _audio = GetComponent<AudioSource>();
         _initialBoneRotation = boneEffect.transform.rotation;
         _hint.OnHintShow += () =>
         {
@@ -65,6 +68,8 @@ public class Resource : MonoBehaviour
             time--;
             slider.value = time;
             LeanTween.rotateLocal(boneEffect.gameObject, Vector3.forward * Random.Range(-20f, 20f), .2f).setEaseShake();
+            _audio.clip = chopClips[Random.Range(0, chopClips.Length)];
+            _audio.Play();
             yield return new WaitForSeconds(1);
         }
         if (brokenSprite == null)

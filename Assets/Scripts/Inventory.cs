@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private InventorySlot[] slots;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private GameObject activeItemEffect;
+    [SerializeField] private AudioClip equipClip;
 
     private Transform _player;
     private KeyCode[] keyCodes = {
@@ -53,6 +54,7 @@ public class Inventory : MonoBehaviour
         if (!GetEmptySlot()) return false;
         if (slots[_activeSlot].IsFull)
             ThrowItem();
+        LeanAudio.play(equipClip);
         slots[_activeSlot].AssignItem(item);
         return true;
     }

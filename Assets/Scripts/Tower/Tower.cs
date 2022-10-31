@@ -15,6 +15,7 @@ namespace Tower
         [SerializeField] private GameObject map;
         [SerializeField] private PlayableDirector cutsceneEnterController;
         [SerializeField] private PlayableDirector cutsceneExitController;
+        [SerializeField] private AudioClip upgradeClip;
         public static Tower Instance;
         private TowerCamera _towerCamera => GetComponentInChildren<TowerCamera>();
         private void Awake()
@@ -48,11 +49,11 @@ namespace Tower
                 level--;
                 yield break;
             }
-
             var floor = Instantiate(floorPrefab, new Vector3(0, (level - 1) * levelHeight, 0), Quaternion.identity, transform).GetComponent<Floor>();
             _towerCamera.Show(level - 1);
             floor.transform.localScale = Vector3.zero;
             yield return new WaitForSeconds(_towerCamera.animationTime);
+            LeanAudio.play(upgradeClip);
 
             floor.Init(level - 1, floors[level - 1]);
         }

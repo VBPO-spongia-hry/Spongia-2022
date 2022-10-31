@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: e5a12ab49cc828ff8aeeb99ac7177094, type: 2}
     - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: breakTime
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: boneEffect
@@ -23,6 +23,30 @@ PrefabInstance:
       propertyPath: brokenSprite
       value: 
       objectReference: {fileID: 21300000, guid: d8f13471191a3ef3db71f29e3d1cb14a, type: 3}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: e268ba929f5a9a1d1afd478e56da67d3, type: 3}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 316c99844942384d2b2664a9a99e3d21, type: 3}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: d8c1cf4920d269950b38860fe5b3a7d7, type: 3}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8085619051a9001e682f3c55be39fc9f, type: 3}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c242a241b8a797a78b288de6ddad586, type: 3}
     - target: {fileID: 1447068832595044225, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_Size.x
       value: 0.59205776
