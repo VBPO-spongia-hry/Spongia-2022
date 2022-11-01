@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -8,6 +8,7 @@ namespace Tower
     public class Tower : MonoBehaviour
     {
         public static bool TowerActive;
+        public static event Action<int> OnTowerUpdated;
         public int level;
         public float levelHeight;
         public FloorSO[] floors;
@@ -49,6 +50,7 @@ namespace Tower
                 level--;
                 yield break;
             }
+            OnTowerUpdated?.Invoke(level);
             var floor = Instantiate(floorPrefab, new Vector3(0, (level - 1) * levelHeight, 0), Quaternion.identity, transform).GetComponent<Floor>();
             _towerCamera.Show(level - 1);
             floor.transform.localScale = Vector3.zero;

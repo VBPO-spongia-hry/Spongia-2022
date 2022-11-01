@@ -21,6 +21,7 @@ namespace Crafting
 
         public void InitFloorCrafter(CraftingRecipe[] floorRecipes)
         {
+            Debug.Log(floorRecipes.Length);
             _floorRecipes = floorRecipes;
             InitCrafter(floorRecipes[0]);
             onCraftingComplete += () =>
