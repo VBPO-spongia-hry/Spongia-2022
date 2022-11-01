@@ -55,7 +55,7 @@ namespace Tower
             yield return new WaitForSeconds(_towerCamera.animationTime);
             LeanAudio.play(upgradeClip);
 
-            floor.Init(level - 1, floors[level - 1]);
+            floor.Init(level - 1, floors[level - 2]);
         }
 
         private void Hide()

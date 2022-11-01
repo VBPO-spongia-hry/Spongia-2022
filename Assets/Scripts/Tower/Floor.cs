@@ -38,6 +38,7 @@ namespace Tower
             floorSO = floor;
             InitItems();
             GetComponent<SortingGroup>().sortingLayerName = "Default";
+            Debug.Log(floor.name);
             GetComponentInChildren<Crafting.Crafter>().InitCrafter(floor.recipe);
         }
 

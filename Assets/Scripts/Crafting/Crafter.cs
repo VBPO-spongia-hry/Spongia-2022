@@ -51,6 +51,7 @@ namespace Crafting
             if (recipe.result)
             {
                 resultSlot = Instantiate(resultSlotPrefab, transform).GetComponent<InventorySlot>();
+                resultSlot.GetComponent<Button>().onClick.AddListener(() => OnResultTaken());
                 resultPreview = resultSlot.transform.Find("ResultPreview").GetComponent<Image>();
                 resultPreview.sprite = recipe.result.icon;
             }
