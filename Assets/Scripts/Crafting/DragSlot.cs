@@ -11,6 +11,8 @@ namespace Crafting
         public static DropZone Zone;
         public ItemSO item;
         [SerializeField] private Image itemImage;
+        [SerializeField] private ItemSO fullBucket;
+        [SerializeField] private ItemSO emptyBucket;
         private InventorySlot _from;
         private bool TowerMode => Tower.Tower.TowerActive;
 
@@ -46,7 +48,10 @@ namespace Crafting
                 {
                     if (Zone.Drop(item))
                     {
-                        // TODO: replace filledBucket with empty bucket
+                        if (item == fullBucket)
+                        {
+                            _from.AssignItem(emptyBucket);
+                        }
                         Clear();
                     }
                     else

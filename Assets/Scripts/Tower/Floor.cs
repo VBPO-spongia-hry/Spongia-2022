@@ -25,7 +25,7 @@ namespace Tower
 
         public void Init(int level, FloorSO floor)
         {
-            transform.localPosition = new Vector3(0, (level - 1) * floorHeight);
+            transform.localPosition = new Vector3(0, floor.level * floorHeight);
             Destroy(dirtEffect, 3);
             GetComponent<SortingGroup>().sortingLayerName = "Background";
             nameText.text = floor.floorName;

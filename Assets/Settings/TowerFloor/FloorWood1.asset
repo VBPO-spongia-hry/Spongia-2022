@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ffe8888c4ba0ac4b06bf3865ef29fb, type: 3}
   m_Name: FloorWood1
   m_EditorClassIdentifier: 
-  floorName: 1st Floor - upgrade tower
+  floorName: Twisting Station
   items:
   - Item1
   - Item2
   - Item3
-  level: 2
+  level: 0
   recipe: {fileID: 11400000, guid: 914775ab2fc15ac4a987e6a478ea06e9, type: 2}
   unlockRecipe: {fileID: 11400000, guid: 259100a7dbb50124796c8f0338881e92, type: 2}

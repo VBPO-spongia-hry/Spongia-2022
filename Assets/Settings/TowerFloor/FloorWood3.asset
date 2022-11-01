@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ffe8888c4ba0ac4b06bf3865ef29fb, type: 3}
   m_Name: FloorWood3
   m_EditorClassIdentifier: 
-  floorName: 1st Floor - upgrade tower
+  floorName: 3rd Floor
   items:
   - Item1
   - Item2
