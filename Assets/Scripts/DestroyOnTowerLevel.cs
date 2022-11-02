@@ -18,4 +18,9 @@ public class DestroyOnTowerLevel : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnDestroy()
+    {
+        Tower.Tower.OnTowerUpdated -= OnTowerUpdate;
+    }
 }
