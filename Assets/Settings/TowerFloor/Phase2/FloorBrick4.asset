@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorName: 
   items: []
+<<<<<<< Updated upstream
   level: 0
   recipe: {fileID: 0}
+=======
+  level: 6
+  recipe: {fileID: 11400000, guid: 56f010c7379ed154a90214da85681238, type: 2}
+>>>>>>> Stashed changes
   unlockRecipe: {fileID: 11400000, guid: e8ed03b964410f646b9ccc080ee34c4a, type: 2}

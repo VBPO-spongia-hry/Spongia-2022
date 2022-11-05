@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddbc15d5b858242babad0a7bd997ff3, type: 3}
   m_Name: Clay
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: aafec259fba881a448b1f39613752f81, type: 3}
+  icon: {fileID: 21300000, guid: 6592fcf4137549e49b9e06f140cd8042, type: 3}
   itemName: Clay

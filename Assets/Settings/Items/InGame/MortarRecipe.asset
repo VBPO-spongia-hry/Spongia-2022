@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b28004879753b9d08c5c35a7cf367cd, type: 3}
+  m_Name: MortarRecipe
+  m_EditorClassIdentifier: 
+  result: {fileID: 11400000, guid: 99fc48260c0e6864784840b666386232, type: 2}
+  ingredients:
+  - item: {fileID: 11400000, guid: 6bf8a97025f41ac43b7e4931c965c788, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: daf53ae5112c9b7419e2f36cb3d4c5f2, type: 2}
+    count: 1
+  craftingTime: 5

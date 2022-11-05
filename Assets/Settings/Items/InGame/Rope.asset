@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddbc15d5b858242babad0a7bd997ff3, type: 3}
   m_Name: Rope
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 0ca01be400896fb4dbbe878454f7fa63, type: 3}
+  icon: {fileID: 21300000, guid: d3b08930ad886dc498d226b73076160c, type: 3}
   itemName: Rope
