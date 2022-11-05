@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 11400000, guid: b57228e1122e9e94594dd4f9b0193ac9, type: 2}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: chopClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: e268ba929f5a9a1d1afd478e56da67d3, type: 3}
     - target: {fileID: 1447068832595044225, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_Size.x
       value: 1.01

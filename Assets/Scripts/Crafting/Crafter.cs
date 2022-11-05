@@ -32,7 +32,8 @@ namespace Crafting
                 {
                     Destroy(transform.GetChild(i).gameObject);
                 }
-                InitCrafter(_floorRecipes[_recipeIndex]);
+                if (_recipeIndex < _floorRecipes.Length)
+                    InitCrafter(_floorRecipes[_recipeIndex]);
             };
         }
 
@@ -103,6 +104,7 @@ namespace Crafting
             if (FindObjectOfType<Inventory>().PickUp(recipe.result))
             {
                 resultSlot.ThrowItem();
+                OnZoneUpdated();
             }
         }
     }

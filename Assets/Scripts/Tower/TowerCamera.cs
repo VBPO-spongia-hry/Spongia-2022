@@ -8,7 +8,7 @@ namespace Tower
     public class TowerCamera : MonoBehaviour
     {
         private int _focusedFloor;
-        public float animationTime = .75f;
+        public float animationTime = .25f;
         private float floorHeight => Tower.Instance.levelHeight;
 
         private void Start()
