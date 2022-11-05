@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rb;
+    [SerializeField] private new CinemachineVirtualCamera camera;
     [SerializeField] private float moveSpeed;
+    internal static float speedBoost = 1;
+    internal static float orthoSize = 10;
+
     private void Start()
     {
+        orthoSize = camera.m_Lens.OrthographicSize;
         _rb = GetComponent<Rigidbody2D>();
         Application.targetFrameRate = 300;
     }
+
 
     private void FixedUpdate()
     {
@@ -19,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         var movement = new Vector2(horizontal, vertical);
 
-        _rb.MovePosition(_rb.position + movement * moveSpeed * Time.deltaTime);
+        _rb.MovePosition(_rb.position + movement * moveSpeed * speedBoost * Time.deltaTime);
         if (Input.GetButtonDown("Fire1"))
         {
             Resource.activeResource?.Break();
@@ -28,5 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             Resource.activeResource?.StopBreaking();
         }
+
+        camera.m_Lens.OrthographicSize = orthoSize;
     }
 }

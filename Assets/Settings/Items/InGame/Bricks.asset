@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b28004879753b9d08c5c35a7cf367cd, type: 3}
-  m_Name: LevelWood1
+  m_Script: {fileID: 11500000, guid: cddbc15d5b858242babad0a7bd997ff3, type: 3}
+  m_Name: Bricks
   m_EditorClassIdentifier: 
-  result: {fileID: 0}
-  ingredients:
-  - item: {fileID: 11400000, guid: 3e09e506def1ad5dab7b095a3c103ad6, type: 2}
-    count: 1
-  craftingTime: 0
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  itemName: Bricks
