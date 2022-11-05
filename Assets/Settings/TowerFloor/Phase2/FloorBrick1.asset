@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ffe8888c4ba0ac4b06bf3865ef29fb, type: 3}
+  m_Name: FloorBrick1
+  m_EditorClassIdentifier: 
+  floorName: 
+  items: []
+  level: 0
+  recipe: {fileID: 11400000, guid: 8a5272dd71735de45a5b8be8f10379a1, type: 2}
+  unlockRecipe: {fileID: 11400000, guid: 4e4dfb26be99c9e43ad1b1c8e3ea2a3c, type: 2}
