@@ -52,7 +52,7 @@ public class HintText : MonoBehaviour
         text.ForceMeshUpdate();
         text.GetComponent<RectTransform>().sizeDelta = text.textBounds.size;
         keyboardHint.sprite = image.image;
-        _group.alpha = 0;
+        _group.alpha = 1;
         _group.blocksRaycasts = true;
         LeanTween.cancel(gameObject);
         LeanTween.alphaCanvas(_group, 1, .2f).setEaseInExpo();

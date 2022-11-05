@@ -63,12 +63,14 @@ namespace Tower
         private void Hide()
         {
             TowerActive = false;
+            FindObjectOfType<CutsceneController>().Skip();
             cutsceneExitController.Play();
         }
 
         public static void Show()
         {
             TowerActive = true;
+            FindObjectOfType<CutsceneController>().Skip();
             Instance.cutsceneEnterController.Play();
         }
 
