@@ -8,7 +8,7 @@ namespace Tower
     public class FloorSO : ScriptableObject
     {
         public string floorName;
-        public string[] items;
+        public Booster[] items;
         public int level;
         public Crafting.CraftingRecipe recipe;
         public Crafting.CraftingRecipe unlockRecipe;

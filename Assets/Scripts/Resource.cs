@@ -15,6 +15,7 @@ public class Resource : MonoBehaviour
     [SerializeField] private GameObject itemprefab;
     [SerializeField] private AudioClip[] chopClips;
     public static Resource activeResource;
+    public static float miningBooster = 1;
     private bool _isBreaking = false;
     private bool _isBroken = false;
     private HintObject _hint;
@@ -70,15 +71,19 @@ public class Resource : MonoBehaviour
 
     private IEnumerator StartBreaking()
     {
-        var time = breakTime;
+        var time = breakTime * miningBooster;
+        slider.maxValue = time;
         while (time > 1)
         {
             time--;
             slider.value = time;
             if (boneEffect != null)
                 LeanTween.rotateLocal(boneEffect.gameObject, Vector3.forward * Random.Range(-20f, 20f), .2f).setEaseShake();
-            _audio.clip = chopClips[Random.Range(0, chopClips.Length)];
-            _audio.Play();
+            if (chopClips != null)
+            {
+                _audio.clip = chopClips[Random.Range(0, chopClips.Length)];
+                _audio.Play();
+            }
             yield return new WaitForSeconds(1);
         }
         if (brokenSprite == null)

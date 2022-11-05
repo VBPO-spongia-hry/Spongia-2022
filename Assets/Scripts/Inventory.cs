@@ -21,9 +21,23 @@ public class Inventory : MonoBehaviour
     private bool _isTowerActive => Tower.Tower.TowerActive;
 
     public ItemSO ActiveTool => slots[_activeSlot].Item;
+    [SerializeField] private int _numSlots = 2;
+    public int numSlots
+    {
+        get => _numSlots;
+        set
+        {
+            _numSlots = value;
+            for (int i = 0; i < slots.Length; i++)
+            {
+                slots[i].gameObject.SetActive(i < numSlots);
+            }
+        }
+    }
 
     private void Start()
     {
+        numSlots = _numSlots;
         _player = FindObjectOfType<PlayerController>().transform;
         SetActiveItem(0);
         activeItemEffect.transform.localPosition = Vector3.zero;
@@ -44,6 +58,7 @@ public class Inventory : MonoBehaviour
 
     public void SetActiveItem(int index)
     {
+        if (index >= numSlots) return;
         _activeSlot = index;
         activeItemEffect.transform.SetParent(slots[index].transform, true);
         activeItemEffect.transform.SetSiblingIndex(0);
@@ -62,7 +77,7 @@ public class Inventory : MonoBehaviour
 
     private bool GetEmptySlot()
     {
-        for (int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < numSlots; i++)
         {
             if (!slots[i].IsFull)
             {

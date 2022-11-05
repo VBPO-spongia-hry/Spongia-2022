@@ -8,6 +8,7 @@ namespace Crafting
 {
     public class Crafter : MonoBehaviour
     {
+        public static float craftingBoost = 1;
         private CraftingRecipe recipe;
         [SerializeField] private GameObject craftingSlotPrefab;
         [SerializeField] private GameObject resultSlotPrefab;
@@ -68,7 +69,7 @@ namespace Crafting
                     slot.Clear();
                 }
                 craftingSlider.gameObject.SetActive(true);
-                LeanTween.value(gameObject, 0, 1, recipe.craftingTime).setOnUpdate((val) =>
+                LeanTween.value(gameObject, 0, 1, recipe.craftingTime * craftingBoost).setOnUpdate((val) =>
                 {
                     craftingSlider.value = val;
                 }).setOnComplete(OnCraftingComplete);

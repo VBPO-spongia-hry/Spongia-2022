@@ -51,7 +51,7 @@ namespace Tower
                 var btn = Instantiate(itemUIPrefab, itemsContainer).GetComponentInChildren<Button>();
                 var idx = i;
                 btn.onClick.AddListener(() => selectItem(idx));
-                btn.GetComponentInChildren<TextMeshProUGUI>().text = floorSO.items[i];
+                btn.GetComponentInChildren<TextMeshProUGUI>().text = floorSO.items[i].boosterName;
                 LeanTween.scale(btn.gameObject, 1.17f * Vector3.one, 1.5f).setEaseInOutSine().setLoopPingPong();
                 LeanTween.rotateZ(btn.transform.parent.Find("LightEffect").gameObject, 180f, 20f).setLoopClamp();
                 LeanTween.scale(btn.transform.parent.Find("LightEffect").gameObject, 1.2f * Vector3.one, 20f).setLoopPingPong();
@@ -60,7 +60,8 @@ namespace Tower
 
         private void selectItem(int i)
         {
-            selectedItem.text = floorSO.items[i];
+            selectedItem.text = floorSO.items[i].boosterName;
+            floorSO.items[i].Activate();
             selectedItem.gameObject.SetActive(true);
             LeanTween.alphaCanvas(itemsContainer.GetComponent<CanvasGroup>(), 0, .5f).setOnComplete(() =>
             {
