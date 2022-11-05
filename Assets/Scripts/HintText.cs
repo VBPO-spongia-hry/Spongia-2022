@@ -54,7 +54,6 @@ public class HintText : MonoBehaviour
         keyboardHint.sprite = image.image;
         _group.alpha = 1;
         _group.blocksRaycasts = true;
-        LeanTween.cancel(gameObject);
         LeanTween.alphaCanvas(_group, 1, .2f).setEaseInExpo();
     }
 
@@ -62,7 +61,6 @@ public class HintText : MonoBehaviour
     {
         _group.blocksRaycasts = false;
         _focusTransform = null;
-        LeanTween.cancel(gameObject);
         LeanTween.alphaCanvas(_group, 0, .2f).setEaseOutSine();
     }
 

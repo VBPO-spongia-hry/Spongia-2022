@@ -27,7 +27,7 @@ public class Resource : MonoBehaviour
         _hint = GetComponent<HintObject>();
         _audio = GetComponent<AudioSource>();
         _inventory = FindObjectOfType<Inventory>();
-        if(boneEffect != null)
+        if (boneEffect != null)
             _initialBoneRotation = boneEffect.transform.rotation;
         _hint.OnHintShow += () =>
         {
@@ -75,7 +75,7 @@ public class Resource : MonoBehaviour
         {
             time--;
             slider.value = time;
-            if(boneEffect != null)
+            if (boneEffect != null)
                 LeanTween.rotateLocal(boneEffect.gameObject, Vector3.forward * Random.Range(-20f, 20f), .2f).setEaseShake();
             _audio.clip = chopClips[Random.Range(0, chopClips.Length)];
             _audio.Play();

@@ -39,6 +39,7 @@ public class CutsceneController : MonoBehaviour
         {
             throw new System.NullReferenceException("No cutscene with name " + cutsceneName);
         }
+        Debug.Log(cutscene);
         cutscene.Play();
         activeDirector = cutscene;
     }

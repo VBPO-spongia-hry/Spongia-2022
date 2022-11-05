@@ -60,11 +60,11 @@ namespace Tower
             floor.Init(level - 1, floors[level - 2]);
         }
 
-        private void Hide()
+        public static void Hide()
         {
             TowerActive = false;
             FindObjectOfType<CutsceneController>().Skip();
-            cutsceneExitController.Play();
+            Instance.cutsceneExitController.Play();
         }
 
         public static void Show()
