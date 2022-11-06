@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddbc15d5b858242babad0a7bd997ff3, type: 3}
   m_Name: Flax
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 5db8d9098dc4c4449910d20fa88dc350, type: 3}
+  icon: {fileID: -796180909, guid: 5db8d9098dc4c4449910d20fa88dc350, type: 3}
   itemName: Flax
