@@ -29,7 +29,6 @@ namespace Tower
             transform.localPosition = new Vector3(0, floor.level * floorHeight);
             Debug.Log(transform.localPosition);
             Destroy(dirtEffect, 3);
-            GetComponent<SortingGroup>().sortingLayerName = "Background";
             nameText.text = floor.floorName;
             LeanTween.scale(gameObject, Vector3.one, animationTime).setEaseInOutCubic();
             LeanTween.moveLocalY(gameObject, transform.localPosition.y + floorHeight, animationTime).setEaseSpring().setOnComplete(() =>
@@ -39,7 +38,6 @@ namespace Tower
             GetComponentInChildren<Canvas>().worldCamera = Camera.main;
             floorSO = floor;
             InitItems();
-            GetComponent<SortingGroup>().sortingLayerName = "Default";
             foreach (var building in buildings)
             {
                 if (floor.floorName == building.name)

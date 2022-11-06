@@ -305,7 +305,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1610032005
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: -63148801, guid: cf164164d181e667abe0d88848ec776e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5259,7 +5259,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1610032005
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 621032339, guid: 73849830ba611250ba03935e6a1c26db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10522,7 +10522,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6896527010877078469}
   - component: {fileID: 5939014835882562352}
-  - component: {fileID: 8607392561718498541}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -10575,17 +10574,6 @@ MonoBehaviour:
   - {fileID: 4069278567582229096}
   - {fileID: 2453510039102658908}
   - {fileID: 2947292442149099251}
---- !u!210 &8607392561718498541
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6896527010877078474}
-  m_Enabled: 1
-  m_SortingLayerID: 1610032005
-  m_SortingLayer: 2
-  m_SortingOrder: 0
 --- !u!1 &6969769986610796249
 GameObject:
   m_ObjectHideFlags: 0
