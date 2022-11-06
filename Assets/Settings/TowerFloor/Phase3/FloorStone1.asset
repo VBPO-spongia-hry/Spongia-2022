@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorName: 
   items: []
-  level: 0
+  level: 6
   recipe: {fileID: 0}
   unlockRecipe: {fileID: 11400000, guid: a1cbaa3b3275a2d4c80da0a0ed40c7ae, type: 2}
