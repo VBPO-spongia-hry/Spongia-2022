@@ -23,11 +23,11 @@ namespace Crafting
             acceptsImage.sprite = accepts.icon;
             _crafter = GetComponentInParent<Crafter>();
             countText.text = $"0/{capacity}";
-            acceptsImage.color = new Color(0, 0, 0, .2f);
+            acceptsImage.color = new Color(0, 0, 0, 155f / 255f);
             _crafter.onCraftingComplete += () =>
             {
                 countText.text = $"0/{capacity}";
-                acceptsImage.color = new Color(0, 0, 0, .2f);
+                acceptsImage.color = new Color(0, 0, 0, 155f / 255f);
             };
         }
 

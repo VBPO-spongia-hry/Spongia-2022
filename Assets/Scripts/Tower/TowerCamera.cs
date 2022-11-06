@@ -31,7 +31,7 @@ namespace Tower
 
         public void Show(int targetFloor)
         {
-            if (targetFloor < 0 || targetFloor >= Tower.Instance.level || targetFloor == _focusedFloor) return;
+            if (targetFloor < 0 || targetFloor >= Tower.Instance.floorObjects.Count + 1 || targetFloor == _focusedFloor) return;
             LeanTween.moveLocalY(gameObject, floorHeight * targetFloor + floorHeight / 2, animationTime).setEaseOutCirc().setOnComplete(() =>
             {
                 _focusedFloor = targetFloor;

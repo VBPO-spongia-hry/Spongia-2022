@@ -6,6 +6,7 @@ public class UpgradeCutscene : MonoBehaviour
 {
     [SerializeField] private int levelToTrigger;
     [SerializeField] private string cutsceneName;
+    [SerializeField] private bool DestroyFloors;
     private void Start()
     {
         Tower.Tower.OnTowerUpdated += OnTowerUpgraded;
@@ -23,5 +24,7 @@ public class UpgradeCutscene : MonoBehaviour
         Tower.Tower.Hide();
         yield return new WaitForSeconds(1);
         CutsceneController.PlayCutscene(cutsceneName);
+        if (DestroyFloors)
+            Tower.Tower.Instance.DestroyFloors();
     }
 }

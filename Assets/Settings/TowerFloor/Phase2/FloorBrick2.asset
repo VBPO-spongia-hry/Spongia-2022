@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ffe8888c4ba0ac4b06bf3865ef29fb, type: 3}
   m_Name: FloorBrick2
   m_EditorClassIdentifier: 
-  floorName: 
+  floorName: Forge
   items: []
   level: 4
   recipe: {fileID: 11400000, guid: 92bdf9bd76dab7b4cac228644168950c, type: 2}

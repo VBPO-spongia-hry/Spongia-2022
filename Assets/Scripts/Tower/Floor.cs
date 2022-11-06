@@ -17,7 +17,7 @@ namespace Tower
         [SerializeField] private GameObject dirtEffect;
         private float floorHeight => Tower.Instance.levelHeight;
         [SerializeField] private FloorSO floorSO;
-
+        [SerializeField] private GameObject[] buildings;
         private void Start()
         {
             selectedItem.gameObject.SetActive(false);
@@ -38,7 +38,10 @@ namespace Tower
             floorSO = floor;
             InitItems();
             GetComponent<SortingGroup>().sortingLayerName = "Default";
-            Debug.Log(floor.name);
+            foreach (var building in buildings)
+            {
+                building.SetActive(floor.floorName == building.name);
+            }
             GetComponentInChildren<Crafting.Crafter>().InitCrafter(floor.recipe);
         }
 
