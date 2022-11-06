@@ -63,6 +63,7 @@ public class Resource : MonoBehaviour
     public void StopBreaking()
     {
         LeanTween.cancel(gameObject);
+        FindObjectOfType<PlayerController>().animator.SetBool("Mining", false);
         StopAllCoroutines();
         _isBreaking = false;
         slider.value = breakTime;
@@ -73,6 +74,7 @@ public class Resource : MonoBehaviour
     {
         var time = breakTime * miningBooster;
         slider.maxValue = time;
+        FindObjectOfType<PlayerController>().animator.SetBool("Mining", true);
         while (time > 1)
         {
             time--;
@@ -95,7 +97,7 @@ public class Resource : MonoBehaviour
             GetComponent<HintObject>().enabled = false;
         }
 
-
+        FindObjectOfType<PlayerController>().animator.SetBool("Mining", false);
         slider.gameObject.SetActive(false);
         if (drop != null)
         {

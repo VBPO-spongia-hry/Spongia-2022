@@ -131,10 +131,10 @@ TextureImporter:
       name: SW_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 36
-        height: 70
+        x: 75
+        y: 3
+        width: 38
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: SW_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 36
-        height: 70
+        x: 197
+        y: 3
+        width: 38
+        height: 69
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: SW_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 0
-        width: 36
-        height: 70
+        x: 318
+        y: 3
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: SW_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 0
+        x: 442
+        y: 3
         width: 36
-        height: 70
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: SW_4
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
-        width: 36
-        height: 70
+        x: 564
+        y: 3
+        width: 38
+        height: 69
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: SW_5
       rect:
         serializedVersion: 2
-        x: 180
-        y: 0
-        width: 36
-        height: 70
+        x: 685
+        y: 3
+        width: 38
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: SW_6
       rect:
         serializedVersion: 2
-        x: 216
-        y: 0
-        width: 36
-        height: 70
+        x: 807
+        y: 7
+        width: 38
+        height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: SW_7
       rect:
         serializedVersion: 2
-        x: 252
-        y: 0
-        width: 36
-        height: 70
+        x: 929
+        y: 7
+        width: 38
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: SW_8
       rect:
         serializedVersion: 2
-        x: 334
-        y: 0
-        width: 46
-        height: 70
+        x: 1043
+        y: 13
+        width: 47
+        height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: SW_9
       rect:
         serializedVersion: 2
-        x: 380
-        y: 0
-        width: 36
-        height: 70
+        x: 1165
+        y: 7
+        width: 49
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: SW_10
       rect:
         serializedVersion: 2
-        x: 416
-        y: 0
-        width: 37
-        height: 70
+        x: 1295
+        y: 3
+        width: 38
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: SW_11
       rect:
         serializedVersion: 2
-        x: 453
-        y: 0
+        x: 1417
+        y: 3
         width: 38
-        height: 70
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: SW_12
       rect:
         serializedVersion: 2
-        x: 491
-        y: 0
-        width: 35
-        height: 70
+        x: 1535
+        y: 7
+        width: 40
+        height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: SW_13
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 46
-        height: 70
+        x: 1660
+        y: 7
+        width: 37
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,6 +417,174 @@ TextureImporter:
       bones: []
       spriteID: d704137c279df60c499f2965ca519b29
       internalID: 1237101651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_14
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 3
+        width: 47
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd52a21f15748c169ee66e567a12a19
+      internalID: 730887480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_15
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 3
+        width: 32
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c814ee19322fdfea4b9a487c85a64764
+      internalID: 362990723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_16
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 3
+        width: 44
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31a575ac533854eaa9e576069566b3e
+      internalID: -925008353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_17
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 3
+        width: 41
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac72cbe550752ec288e4b7673bae773
+      internalID: -221599846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_18
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 3
+        width: 47
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616e1afcf6083ea298d83dae734a6382
+      internalID: 367592723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_19
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 3
+        width: 34
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1766768eae361bed0b40e78a49a14f53
+      internalID: -1381415925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_20
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 3
+        width: 46
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a376e2a72883b7aeeb8be8b96e3e7
+      internalID: 1502379816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_21
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 3
+        width: 42
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce230501fca447f8a89c03485a42fec
+      internalID: -420307827
       vertices: []
       indices: 
       edges: []
@@ -434,16 +602,24 @@ TextureImporter:
     nameFileIdTable:
       SW_11: 1505607420
       SW_2: -351261756
+      SW_19: -1381415925
+      SW_20: 1502379816
       SW_4: -1341197891
       SW_7: 2021392578
       SW_1: -1323171403
       SW_10: -661397170
+      SW_21: -420307827
+      SW_16: -925008353
       SW_13: 1237101651
       SW_8: 492302207
+      SW_15: 362990723
+      SW_17: -221599846
       SW_12: 499647551
+      SW_14: 730887480
       SW_5: -219368268
       SW_3: -1831297695
       SW_6: -1691418199
+      SW_18: 367592723
       SW_0: -715223542
       SW_9: 754630014
   spritePackingTag: 

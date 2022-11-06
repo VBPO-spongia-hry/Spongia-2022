@@ -131,10 +131,10 @@ TextureImporter:
       name: SE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 36
-        height: 70
+        x: 9
+        y: 3
+        width: 38
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: SE_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 36
-        height: 70
+        x: 131
+        y: 3
+        width: 38
+        height: 69
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: SE_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 0
-        width: 36
-        height: 70
+        x: 253
+        y: 3
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: SE_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 0
-        width: 36
-        height: 70
+        x: 375
+        y: 3
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: SE_4
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
-        width: 36
-        height: 70
+        x: 497
+        y: 3
+        width: 38
+        height: 69
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: SE_5
       rect:
         serializedVersion: 2
-        x: 180
-        y: 0
-        width: 36
-        height: 70
+        x: 619
+        y: 3
+        width: 38
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: SE_6
       rect:
         serializedVersion: 2
-        x: 216
-        y: 0
-        width: 36
-        height: 70
+        x: 740
+        y: 7
+        width: 38
+        height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: SE_7
       rect:
         serializedVersion: 2
-        x: 252
-        y: 0
+        x: 864
+        y: 7
         width: 36
-        height: 70
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: SE_8
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 46
-        height: 70
+        x: 983
+        y: 13
+        width: 48
+        height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: SE_9
       rect:
         serializedVersion: 2
-        x: 416
-        y: 0
-        width: 37
-        height: 70
+        x: 1105
+        y: 7
+        width: 48
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: SE_10
       rect:
         serializedVersion: 2
-        x: 453
-        y: 0
+        x: 1229
+        y: 3
         width: 38
-        height: 70
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: SE_11
       rect:
         serializedVersion: 2
-        x: 491
-        y: 0
-        width: 35
-        height: 70
+        x: 1351
+        y: 3
+        width: 39
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: SE_12
       rect:
         serializedVersion: 2
-        x: 334
-        y: 0
-        width: 46
-        height: 70
+        x: 1476
+        y: 7
+        width: 39
+        height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: SE_13
       rect:
         serializedVersion: 2
-        x: 380
-        y: 0
+        x: 1598
+        y: 7
         width: 36
-        height: 70
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,6 +417,174 @@ TextureImporter:
       bones: []
       spriteID: 9695c023af0b9eb698e81e8a9ce0171d
       internalID: 824996779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_14
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 3
+        width: 47
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f90de486eee5791b2230c258bc63df
+      internalID: -1264679534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_15
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 3
+        width: 33
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e896f4236873dffa5db5e67b188f57
+      internalID: -539031187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_16
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 3
+        width: 44
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122e0e679dcf7a73fa5a5e78dd971a63
+      internalID: -211600110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_17
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 3
+        width: 40
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c461274bc9186f44950a05e9b7e858d
+      internalID: -2137362932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_18
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 3
+        width: 46
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f83149c0a7abb9a8cef2e29d3a5513
+      internalID: 442740723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_19
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 3
+        width: 35
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8516639386614117cbfee002fcbc9dcb
+      internalID: 2006129843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_20
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 3
+        width: 46
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da14f663e56b917ee80db30b5b2fec2c
+      internalID: -1002691116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_21
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 3
+        width: 41
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861a0ee8cad5164ae8452bac7fc4c5f7
+      internalID: -2094939
       vertices: []
       indices: 
       edges: []
@@ -432,7 +600,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      SE_19: 2006129843
       SE_5: -1359662106
+      SE_20: -1002691116
+      SE_17: -2137362932
       SE_14: -1264679534
       SE_9: 268846895
       SE_11: -729440240
@@ -444,9 +615,13 @@ TextureImporter:
       SE_0: 1610916366
       SE_2: 2066081418
       SE_3: -49701433
+      SE_18: 442740723
       SE_1: 1656817954
+      SE_21: -2094939
       SE_10: -586701258
       SE_4: -316592871
+      SE_15: -539031187
+      SE_16: -211600110
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

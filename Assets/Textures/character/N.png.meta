@@ -131,10 +131,10 @@ TextureImporter:
       name: N_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 50
-        height: 73
+        x: 72
+        y: 5
+        width: 42
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: N_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 50
-        height: 73
+        x: 194
+        y: 5
+        width: 42
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: N_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 50
-        height: 73
+        x: 316
+        y: 5
+        width: 42
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: N_3
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 50
-        height: 73
+        x: 438
+        y: 5
+        width: 42
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: N_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 50
-        height: 73
+        x: 560
+        y: 5
+        width: 42
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: N_5
       rect:
         serializedVersion: 2
-        x: 250
-        y: 0
-        width: 50
-        height: 73
+        x: 681
+        y: 5
+        width: 42
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: N_6
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 50
-        height: 73
+        x: 805
+        y: 6
+        width: 42
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: N_7
       rect:
         serializedVersion: 2
-        x: 350
-        y: 0
-        width: 50
-        height: 73
+        x: 927
+        y: 5
+        width: 41
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: N_8
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 50
-        height: 73
+        x: 1047
+        y: 12
+        width: 42
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: N_9
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 50
-        height: 73
+        x: 1169
+        y: 12
+        width: 42
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: N_10
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 50
-        height: 73
+        x: 1292
+        y: 5
+        width: 42
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: N_11
       rect:
         serializedVersion: 2
-        x: 550
-        y: 0
-        width: 50
-        height: 73
+        x: 1414
+        y: 5
+        width: 42
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: N_12
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 50
-        height: 73
+        x: 1536
+        y: 12
+        width: 43
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: N_13
       rect:
         serializedVersion: 2
-        x: 650
-        y: 0
-        width: 50
-        height: 73
+        x: 1658
+        y: 12
+        width: 43
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,6 +417,174 @@ TextureImporter:
       bones: []
       spriteID: 2bfd68fdb7bf303db944785d8374e33d
       internalID: 343806806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_14
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 5
+        width: 42
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa0ff3655f8b76928191dc6a089f48f
+      internalID: 1203765592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_15
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 5
+        width: 42
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af2e736db50539289cd889cb62838d4
+      internalID: -374800506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_16
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 5
+        width: 42
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457a21fd6e94b8e53b23861df2269a08
+      internalID: -435060902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_17
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 5
+        width: 42
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d5bcacfa9fb0ec7b7b66e5e8e15159
+      internalID: -651652913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_18
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 5
+        width: 41
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05935a50ace72f49caeb44ff42e2892c
+      internalID: 1672506242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_19
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 5
+        width: 42
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90ebdee1a7d8d9e8a1a7b334304d503
+      internalID: 982538627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_20
+      rect:
+        serializedVersion: 2
+        x: 2512
+        y: 5
+        width: 42
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b983b109f339fe2fab6bc0a263cd4a7
+      internalID: 666520509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_21
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 5
+        width: 42
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b933e27ec72bfa0059732cbfc1da08fe
+      internalID: -2084144970
       vertices: []
       indices: 
       edges: []
@@ -437,15 +605,23 @@ TextureImporter:
       N_5: -1701026432
       N_8: 430839662
       N_10: -49356854
+      N_18: 1672506242
+      N_16: -435060902
       N_4: 65005580
       N_9: -520431300
       N_2: -162386668
       N_11: 1881639239
       N_13: 343806806
+      N_15: -374800506
+      N_17: -651652913
       N_3: -890178870
       N_0: 1585491843
+      N_14: 1203765592
+      N_21: -2084144970
       N_1: -326658543
       N_12: 1286127969
+      N_20: 666520509
+      N_19: 982538627
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

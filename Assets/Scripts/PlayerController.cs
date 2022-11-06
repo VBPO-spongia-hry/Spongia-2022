@@ -40,6 +40,12 @@ public class PlayerController : MonoBehaviour
             Resource.activeResource?.StopBreaking();
         }
 
+        if (Resource.activeResource)
+        {
+            var dir = transform.position - Resource.activeResource.transform.position;
+            animator.SetFloat("DirX", -dir.normalized.x);
+            animator.SetFloat("DirY", -dir.normalized.y);
+        }
         camera.m_Lens.OrthographicSize = orthoSize;
     }
 }

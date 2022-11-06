@@ -131,10 +131,10 @@ TextureImporter:
       name: NE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 50
-        height: 73
+        x: 10
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: NE_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 50
-        height: 73
+        x: 134
+        y: 1
+        width: 36
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: NE_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 50
-        height: 73
+        x: 256
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: NE_3
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 50
-        height: 73
+        x: 377
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: NE_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 50
-        height: 73
+        x: 499
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: NE_5
       rect:
         serializedVersion: 2
-        x: 250
-        y: 0
-        width: 50
-        height: 73
+        x: 621
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: NE_6
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 50
-        height: 73
+        x: 743
+        y: 5
+        width: 38
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: NE_7
       rect:
         serializedVersion: 2
-        x: 350
-        y: 0
-        width: 50
-        height: 73
+        x: 865
+        y: 5
+        width: 38
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: NE_8
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 50
-        height: 73
+        x: 986
+        y: 7
+        width: 38
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: NE_9
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 50
-        height: 73
+        x: 1107
+        y: 5
+        width: 38
+        height: 65
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: NE_10
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 50
-        height: 73
+        x: 1231
+        y: 1
+        width: 38
+        height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: NE_11
       rect:
         serializedVersion: 2
-        x: 550
-        y: 0
-        width: 50
-        height: 73
+        x: 1352
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: NE_12
       rect:
         serializedVersion: 2
-        x: 600
+        x: 1467
         y: 0
-        width: 50
-        height: 73
+        width: 48
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: NE_13
       rect:
         serializedVersion: 2
-        x: 650
+        x: 1588
         y: 0
-        width: 50
-        height: 73
+        width: 49
+        height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,6 +417,174 @@ TextureImporter:
       bones: []
       spriteID: c7ede2e169f52a07084b2cf9d453ba4f
       internalID: -302654425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_14
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 1
+        width: 41
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c44d7dbd9a853ad0816bb8c03af71ae
+      internalID: 4020079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_15
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 1
+        width: 47
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8eb1db8bcfc0bc8b338a8d7649b3d8
+      internalID: -1726239021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_16
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 1
+        width: 53
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1150fe889d0434ba318eaddbc312b8
+      internalID: 1559487294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_17
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1
+        width: 55
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446dc6c48dac5a90c81fe439c83f8011
+      internalID: 1140873212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_18
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1
+        width: 41
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19dcfb32b7282c1aa77e08f43f6ccea
+      internalID: 1381523951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_19
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 1
+        width: 48
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df652372b3cd6e22b65155a32839286
+      internalID: -160493068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_20
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 1
+        width: 57
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2099a2036ecba10719697df58a55e1e7
+      internalID: 1698793873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_21
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 1
+        width: 57
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1389a19d340cfbeaf264c5b528970d
+      internalID: -1162437612
       vertices: []
       indices: 
       edges: []
@@ -437,12 +605,20 @@ TextureImporter:
       NE_8: 2131732108
       NE_11: -728168700
       NE_6: -916452371
+      NE_19: -160493068
       NE_1: 772179329
+      NE_14: 4020079
+      NE_16: 1559487294
+      NE_18: 1381523951
       NE_12: 430452934
       NE_4: -203985722
       NE_9: 1368180264
+      NE_21: -1162437612
       NE_2: -1554357760
       NE_5: -1843805794
+      NE_17: 1140873212
+      NE_20: 1698793873
+      NE_15: -1726239021
       NE_3: 1622489652
       NE_10: -1188268401
       NE_7: -1563710373

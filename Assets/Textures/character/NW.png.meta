@@ -131,10 +131,10 @@ TextureImporter:
       name: NW_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 36
-        height: 70
+        x: 73
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: NW_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 36
-        height: 70
+        x: 195
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: NW_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 0
-        width: 36
-        height: 70
+        x: 317
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: NW_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 0
-        width: 36
-        height: 70
+        x: 439
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: NW_4
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
-        width: 36
-        height: 70
+        x: 561
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: NW_5
       rect:
         serializedVersion: 2
-        x: 180
-        y: 0
-        width: 36
-        height: 70
+        x: 683
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: NW_6
       rect:
         serializedVersion: 2
-        x: 216
-        y: 0
-        width: 36
-        height: 70
+        x: 805
+        y: 5
+        width: 38
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: NW_7
       rect:
         serializedVersion: 2
-        x: 252
-        y: 0
-        width: 36
-        height: 70
+        x: 927
+        y: 5
+        width: 38
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: NW_8
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 36
-        height: 70
+        x: 1051
+        y: 7
+        width: 38
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: NW_9
       rect:
         serializedVersion: 2
-        x: 324
-        y: 0
-        width: 35
-        height: 70
+        x: 1173
+        y: 5
+        width: 38
+        height: 65
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,9 +341,9 @@ TextureImporter:
       name: NW_10
       rect:
         serializedVersion: 2
-        x: 359
-        y: 0
-        width: 37
+        x: 1294
+        y: 1
+        width: 38
         height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: NW_11
       rect:
         serializedVersion: 2
-        x: 396
-        y: 0
-        width: 36
-        height: 70
+        x: 1415
+        y: 1
+        width: 38
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: NW_12
       rect:
         serializedVersion: 2
-        x: 432
+        x: 1535
         y: 0
-        width: 46
-        height: 70
+        width: 48
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,9 +404,9 @@ TextureImporter:
       name: NW_13
       rect:
         serializedVersion: 2
-        x: 478
+        x: 1657
         y: 0
-        width: 46
+        width: 48
         height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -417,6 +417,174 @@ TextureImporter:
       bones: []
       spriteID: d691047fc666c19c6a4ce70ec70229a8
       internalID: -1868436825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_14
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1
+        width: 41
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d334d39d8cc25bbd79885930ed2c8049
+      internalID: -1586175140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_15
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1
+        width: 49
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf5f17ae84feb5de9906ca7aea2a08a
+      internalID: -1389908473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_16
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1
+        width: 53
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539c6b5f9894e87df96284d96e21ce46
+      internalID: -1073121411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_17
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 1
+        width: 55
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2080572d4747328a87f59e5c15aaea5
+      internalID: -1192645456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_18
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 1
+        width: 41
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6970819f7da3d21cf98a1f038192c3f3
+      internalID: 1200227514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_19
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 1
+        width: 47
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddb1260f44c27eae823c73101da6ddc
+      internalID: 770209711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_20
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 1
+        width: 57
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9363216c802ca7efb87706c0ab5e6a47
+      internalID: 1682243104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NW_21
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 1
+        width: 58
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6b253290a501b0f8ca7c408521f074
+      internalID: 1366660895
       vertices: []
       indices: 
       edges: []
@@ -434,18 +602,26 @@ TextureImporter:
     nameFileIdTable:
       NW_0: -1945406664
       NW_1: 1385817423
+      NW_15: -1389908473
       NW_8: 200741156
       NW_5: 1216185452
+      NW_19: 770209711
       NW_3: 502658361
+      NW_16: -1073121411
       NW_13: -1868436825
       NW_2: 992780803
       NW_9: 1336977655
+      NW_17: -1192645456
       NW_12: -1413415518
       NW_4: 1352889327
+      NW_21: 1366660895
+      NW_18: 1200227514
       NW_7: 235143734
       NW_10: 277712345
       NW_6: -1111185301
       NW_11: 5070004
+      NW_20: 1682243104
+      NW_14: -1586175140
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
