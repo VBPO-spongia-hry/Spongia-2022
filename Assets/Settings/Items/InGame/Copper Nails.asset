@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddbc15d5b858242babad0a7bd997ff3, type: 3}
   m_Name: Copper Nails
   m_EditorClassIdentifier: 
-  icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 50046774c5d746a40b72ff38eb232600, type: 3}
   itemName: Copper Nails
