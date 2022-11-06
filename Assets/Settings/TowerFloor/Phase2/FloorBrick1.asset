@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorName: Furnace
   items: []
-  level: 3
+  level: 1
   recipe: {fileID: 11400000, guid: 8a5272dd71735de45a5b8be8f10379a1, type: 2}
   unlockRecipe: {fileID: 11400000, guid: 4e4dfb26be99c9e43ad1b1c8e3ea2a3c, type: 2}

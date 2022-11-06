@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorName: Forge
   items: []
-  level: 4
+  level: 2
   recipe: {fileID: 11400000, guid: 92bdf9bd76dab7b4cac228644168950c, type: 2}
   unlockRecipe: {fileID: 11400000, guid: f103e94a40635be41acd903197b853cd, type: 2}

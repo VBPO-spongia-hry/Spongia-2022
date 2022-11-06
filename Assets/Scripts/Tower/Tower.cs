@@ -60,7 +60,7 @@ namespace Tower
             OnTowerUpdated?.Invoke(level);
             var floor = Instantiate(floorPrefab, new Vector3(0, (level - 1) * levelHeight, 0), Quaternion.identity, transform).GetComponent<Floor>();
             floorObjects.Add(floor.gameObject);
-            _towerCamera.Show(level - 1);
+            _towerCamera.Show(floorObjects.Count);
             floor.transform.localScale = Vector3.zero;
             yield return new WaitForSeconds(_towerCamera.animationTime);
             LeanAudio.play(upgradeClip);

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering;
+using UnityEngine.Video;
 
 namespace Tower
 {
@@ -26,6 +27,7 @@ namespace Tower
         public void Init(int level, FloorSO floor)
         {
             transform.localPosition = new Vector3(0, floor.level * floorHeight);
+            Debug.Log(transform.localPosition);
             Destroy(dirtEffect, 3);
             GetComponent<SortingGroup>().sortingLayerName = "Background";
             nameText.text = floor.floorName;
@@ -40,7 +42,18 @@ namespace Tower
             GetComponent<SortingGroup>().sortingLayerName = "Default";
             foreach (var building in buildings)
             {
-                building.SetActive(floor.floorName == building.name);
+                if (floor.floorName == building.name)
+                {
+                    building.SetActive(true);
+                    if (building.TryGetComponent<VideoPlayer>(out var video))
+                    {
+                        video.Play();
+                        video.errorReceived += (vid, err) =>
+                        {
+                            Debug.Log(err);
+                        };
+                    }
+                }
             }
             GetComponentInChildren<Crafting.Crafter>().InitCrafter(floor.recipe);
         }

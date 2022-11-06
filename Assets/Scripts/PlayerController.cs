@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     internal static float speedBoost = 1;
     internal static float orthoSize = 10;
+    public Animator animator;
+
 
     private void Start()
     {
@@ -25,7 +27,9 @@ public class PlayerController : MonoBehaviour
         var vertical = Input.GetAxis("Vertical");
 
         var movement = new Vector2(horizontal, vertical);
-
+        animator.Play("Movement");
+        animator.SetFloat("SpeedX", movement.x);
+        animator.SetFloat("SpeedY", movement.y);
         _rb.MovePosition(_rb.position + movement * moveSpeed * speedBoost * Time.deltaTime);
         if (Input.GetButtonDown("Fire1"))
         {
