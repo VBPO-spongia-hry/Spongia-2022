@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(HintObject))]
 public class Item : MonoBehaviour
@@ -9,10 +10,14 @@ public class Item : MonoBehaviour
     [SerializeField] private float throwDistance = .5f;
 
     private HintObject _hint;
+    private Light2D _light;
+    private string[] toolNames = { "Pickaxe", "Axe", "Empty Bucket", "Full Bucket" };
 
     private void Start()
     {
         _hint = GetComponent<HintObject>();
+        _light = GetComponent<Light2D>();
+        _light.enabled = IsTool();
     }
 
     public void Init(ItemSO itemSO, Vector3 offset)
@@ -20,6 +25,17 @@ public class Item : MonoBehaviour
         this.item = itemSO;
         GetComponent<SpriteRenderer>().sprite = item.icon;
         LeanTween.move(gameObject, transform.position + throwDistance * offset, .5f).setEaseOutCirc();
+        _light.enabled = IsTool();
+    }
+
+    private bool IsTool()
+    {
+        foreach (var tool in toolNames)
+        {
+            if (item.itemName == tool)
+                return true;
+        }
+        return false;
     }
 
     private void PickUp()

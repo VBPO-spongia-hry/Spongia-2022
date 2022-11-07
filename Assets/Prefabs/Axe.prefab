@@ -52,14 +52,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7605210438876687850, guid: deb4cb98a0c52bff19d18aa92f192672, type: 3}
-      propertyPath: m_Size.x
-      value: 0.59499997
-      objectReference: {fileID: 0}
-    - target: {fileID: 7605210438876687850, guid: deb4cb98a0c52bff19d18aa92f192672, type: 3}
-      propertyPath: m_Size.y
-      value: 1.3711468
-      objectReference: {fileID: 0}
-    - target: {fileID: 7605210438876687850, guid: deb4cb98a0c52bff19d18aa92f192672, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1242992188, guid: 7a6cbddf3cf7809408f920f13667c035, type: 3}
