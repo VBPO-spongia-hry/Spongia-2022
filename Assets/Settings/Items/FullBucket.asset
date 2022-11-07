@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddbc15d5b858242babad0a7bd997ff3, type: 3}
   m_Name: FullBucket
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: d0c0a8d7ec75906c5969b6bc18a7cb9f, type: 3}
+  icon: {fileID: -1651832256, guid: 3db26906e45786644a571e12635feeab, type: 3}
   itemName: Full Bucket
