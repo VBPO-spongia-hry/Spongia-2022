@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorName: 2nd Floor
   items:
-  - {fileID: 11400000, guid: ddbc8a5710bb3634495d87fe5959f277, type: 2}
-  - {fileID: 11400000, guid: 37ff9499325de2c4897b04335fcf9806, type: 2}
+  - {fileID: 11400000, guid: 2f2cf868bb95e5671a328e780f8f03fe, type: 2}
   level: 1
   recipe: {fileID: 0}
   unlockRecipe: {fileID: 11400000, guid: 4bf2b40efea0f2841a6ea2876dd3dab7, type: 2}

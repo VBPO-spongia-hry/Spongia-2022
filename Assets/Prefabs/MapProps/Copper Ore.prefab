@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1fb63a728be4cc147932663989747fcb, type: 2}
     - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: breakTime
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: toolToHarvest
@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 8085619051a9001e682f3c55be39fc9f, type: 3}
+    - target: {fileID: 4369782230343753967, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: hintMessage
+      value: Mine Copper
+      objectReference: {fileID: 0}
     - target: {fileID: 4369782230343753967, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: disabledHintMessage
       value: You need a pickaxe
