@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: FloorBrick2
   m_EditorClassIdentifier: 
   floorName: Forge
-  items: []
+  items:
+  - {fileID: 11400000, guid: 37ff9499325de2c4897b04335fcf9806, type: 2}
+  - {fileID: 11400000, guid: 6c5378dd8f22ff67b865187b0d2b7f95, type: 2}
   level: 2
   recipe: {fileID: 11400000, guid: 92bdf9bd76dab7b4cac228644168950c, type: 2}
   unlockRecipe: {fileID: 11400000, guid: f103e94a40635be41acd903197b853cd, type: 2}

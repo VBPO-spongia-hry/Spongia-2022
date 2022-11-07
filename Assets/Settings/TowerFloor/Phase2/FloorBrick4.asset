@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: FloorBrick4
   m_EditorClassIdentifier: 
   floorName: Mixing Station
-  items: []
+  items:
+  - {fileID: 11400000, guid: b38d046295d7f49c9b614bc2053cb74d, type: 2}
+  - {fileID: 11400000, guid: 37ff9499325de2c4897b04335fcf9806, type: 2}
   level: 4
   recipe: {fileID: 11400000, guid: 56f010c7379ed154a90214da85681238, type: 2}
   unlockRecipe: {fileID: 11400000, guid: e8ed03b964410f646b9ccc080ee34c4a, type: 2}
