@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   craftingSlotPrefab: {fileID: 480532946916958565, guid: daf7d8555c97d13d6916990aaec0814e, type: 3}
+  arrowPrefab: {fileID: 6425853324707877969, guid: 9fde4d91fd4864759a6df99afe40982c, type: 3}
   resultSlotPrefab: {fileID: 3100038454742351688, guid: 8ba63370de283de46b50f2d5d842457d, type: 3}
   craftingSlider: {fileID: 1876281940639195324}
 --- !u!1 &1050647308626165372
@@ -5502,7 +5503,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 1610032005
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &7967711738117617443
 MonoBehaviour:
@@ -10642,8 +10643,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Build next floor
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0faf1bcd494274506ae235214ba08059, type: 2}
+  m_sharedMaterial: {fileID: 5018892874904533666, guid: 0faf1bcd494274506ae235214ba08059, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

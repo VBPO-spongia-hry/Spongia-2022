@@ -11,6 +11,7 @@ namespace Crafting
         public static float craftingBoost = 1;
         private CraftingRecipe recipe;
         [SerializeField] private GameObject craftingSlotPrefab;
+        [SerializeField] private GameObject arrowPrefab;
         [SerializeField] private GameObject resultSlotPrefab;
         [SerializeField] private Slider craftingSlider;
         private Image resultPreview;
@@ -53,6 +54,7 @@ namespace Crafting
             }
             if (recipe.result)
             {
+                Instantiate(arrowPrefab, transform);
                 resultSlot = Instantiate(resultSlotPrefab, transform).GetComponent<InventorySlot>();
                 resultSlot.GetComponent<Button>().onClick.AddListener(() => OnResultTaken());
                 resultPreview = resultSlot.transform.Find("ResultPreview").GetComponent<Image>();
