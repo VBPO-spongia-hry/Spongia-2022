@@ -316,15 +316,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2018W A S D\u2019 or \u2018arrow keys\u2019 to move\nPick up with \u2018E\u2019\nMine
-    with \u2018left click\u2019 - we suggest checking if you are standing close enough
-    or trying again, if difficulties occur\n\u2018Up\u2019 and \u2018Down\u2019 Arrow
-    keys to move between floors in the tower.\nDrag items out of your inventory to
-    throw them out, items DO NOT despawn\nDrag items between inventory and crafting
-    recipe to craft\nAfter crafting an item click on it, it will appear in your inventory\n\nIf
-    stuck:\nCheck the recently unlocked areas for new resources\nSearch the map if
-    you see a resource that may be fitting your crafting recipe\nDon\u2019t worry,
-    there are plenty of resources to go around, so you won\u2019t run out\n\n"
+  m_text: "\u2018W A S D\u2019 or \u2018arrow keys\u2019 to move\nPick up with \u2018E\u2019,
+    throw with 'Q'\nMine with \u2018left click\u2019 - we suggest checking if you
+    are standing close enough or trying again, if difficulties occur\n\u2018Up\u2019
+    and \u2018Down\u2019 Arrow keys to move between floors in the tower.\nDrag items
+    out of your inventory to throw them out, items DO NOT despawn\nDrag items between
+    inventory and crafting recipe to craft\nAfter crafting an item click on it, it
+    will appear in your inventory\n\nIf stuck:\nCheck the recently unlocked areas
+    for new resources\nSearch the map if you see a resource that may be fitting your
+    crafting recipe\nDon\u2019t worry, there are plenty of resources to go around,
+    so you won\u2019t run out\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0faf1bcd494274506ae235214ba08059, type: 2}
   m_sharedMaterial: {fileID: 5018892874904533666, guid: 0faf1bcd494274506ae235214ba08059, type: 2}
