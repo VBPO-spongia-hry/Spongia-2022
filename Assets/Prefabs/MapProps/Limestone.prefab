@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 11400000, guid: daf53ae5112c9b7419e2f36cb3d4c5f2, type: 2}
+    - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: toolToHarvest
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e34eb689e781174cb79c0b3285bf623, type: 2}
     - target: {fileID: 1447068832595044225, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_Size.x
       value: 2.84
@@ -80,8 +84,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1447068832595044231, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447068832595044231, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1447068832595044231, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -93,15 +101,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1447068832595044231, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.84
+      value: 0.94666666
       objectReference: {fileID: 0}
     - target: {fileID: 1447068832595044231, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.78
+      value: 0.9266667
       objectReference: {fileID: 0}
     - target: {fileID: 1954307647122407863, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: e268ba929f5a9a1d1afd478e56da67d3, type: 3}
+    - target: {fileID: 4369782230343753967, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: disabledHintMessage
+      value: You need a pickaxe
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
