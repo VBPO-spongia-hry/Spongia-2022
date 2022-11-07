@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b57228e1122e9e94594dd4f9b0193ac9, type: 2}
     - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: breakTime
-      value: 15
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1447068832595044224, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: chopClips.Array.size
@@ -114,6 +114,10 @@ PrefabInstance:
     - target: {fileID: 1954307647122407863, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d8c1cf4920d269950b38860fe5b3a7d7, type: 3}
+      objectReference: {fileID: 8300000, guid: f7c7159ddece83c01a58d6f77efadb05, type: 3}
+    - target: {fileID: 4369782230343753967, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}
+      propertyPath: hintMessage
+      value: Dig up Clay
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5e30991750da00cbb16b0a0d63058b2, type: 3}

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: FloorWood3
   m_EditorClassIdentifier: 
   floorName: 3rd Floor
-  items:
-  - {fileID: 11400000, guid: 2f2cf868bb95e5671a328e780f8f03fe, type: 2}
+  items: []
   level: 2
   recipe: {fileID: 11400000, guid: b225ed459d3780d4aaaaa055da75b8f8, type: 2}
   unlockRecipe: {fileID: 11400000, guid: d0c550cf7e69a3e42acf27b02a535b9f, type: 2}
