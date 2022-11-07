@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: FloorStone2
   m_EditorClassIdentifier: 
   floorName: 
-  items: []
+  items:
+  - {fileID: 11400000, guid: 37ff9499325de2c4897b04335fcf9806, type: 2}
+  - {fileID: 11400000, guid: b38d046295d7f49c9b614bc2053cb74d, type: 2}
   level: 7
   recipe: {fileID: 0}
   unlockRecipe: {fileID: 11400000, guid: a1cbaa3b3275a2d4c80da0a0ed40c7ae, type: 2}

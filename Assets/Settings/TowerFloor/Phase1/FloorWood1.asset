@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorName: Twisting Station
   items:
-  - {fileID: 11400000, guid: 2f2cf868bb95e5671a328e780f8f03fe, type: 2}
   - {fileID: 11400000, guid: b38d046295d7f49c9b614bc2053cb74d, type: 2}
   - {fileID: 11400000, guid: 6c5378dd8f22ff67b865187b0d2b7f95, type: 2}
   level: 0
