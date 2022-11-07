@@ -9,7 +9,7 @@ public class Bucket : MonoBehaviour
     [SerializeField] private ItemSO emptyBucket;
     [SerializeField] private ItemSO fullBucket;
     [SerializeField] private AudioClip fillClip;
-    [SerializeField] private TileBase waterTile;
+    [SerializeField] public Collider2D waterCollider;
 
     private Inventory _inventory;
     private Vector3Int[] directions = { Vector3Int.left, Vector3Int.right, Vector3Int.up, Vector3Int.down };
@@ -53,11 +53,6 @@ public class Bucket : MonoBehaviour
 
     private bool IsWaterNearby(Vector3Int pos)
     {
-        foreach (var dir in directions)
-        {
-            if (map.GetTile(pos + dir) == waterTile)
-                return true;
-        }
-        return false;
+        return Physics2D.Distance(GetComponent<Collider2D>(), waterCollider).distance < .2f;
     }
 }
