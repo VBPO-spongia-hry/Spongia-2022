@@ -22,6 +22,7 @@ namespace Crafting
             _from = from;
             transform.position = _from.transform.position;
             itemImage.enabled = true;
+            itemImage.preserveAspect = true;
             item = from.ThrowItem();
             itemImage.sprite = item.icon;
         }

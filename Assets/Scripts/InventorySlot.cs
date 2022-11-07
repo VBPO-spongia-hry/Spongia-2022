@@ -17,6 +17,7 @@ public class InventorySlot : MonoBehaviour
     {
         _item = item;
         itemImage.sprite = item.icon;
+        itemImage.preserveAspect = true;
         itemImage.gameObject.SetActive(true);
         itemImage.transform.localScale = Vector3.one * .8f;
         LeanTween.cancel(itemImage.gameObject);
