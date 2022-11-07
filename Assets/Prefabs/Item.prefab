@@ -114,9 +114,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hintMessage: Pick Up
-  hintDistance: 0.5
+  hintDistance: 1
   hintKey: E
   follow: {fileID: 6612797976770485895}
+  disabledHintMessage: 
 --- !u!58 &4471392541279376392
 CircleCollider2D:
   m_ObjectHideFlags: 0
