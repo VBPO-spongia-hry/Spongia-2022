@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddbc15d5b858242babad0a7bd997ff3, type: 3}
   m_Name: Copper
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: f98c5756df08f064aa78db83efa7ebe2, type: 3}
+  icon: {fileID: 1754750393, guid: f98c5756df08f064aa78db83efa7ebe2, type: 3}
   itemName: Copper
