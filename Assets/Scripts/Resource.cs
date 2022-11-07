@@ -46,7 +46,7 @@ public class Resource : MonoBehaviour
         {
             _hint.IsDisabled = _inventory.ActiveTool != toolToHarvest;
         }
-        if ((_isBreaking && activeResource != this) || _hint.IsDisabled)
+        if ((_isBreaking && activeResource != this) || (activeResource == this && _hint.IsDisabled))
             StopBreaking();
         if (!_isBreaking && boneEffect != null)
             boneEffect.rotation = _initialBoneRotation;
@@ -96,7 +96,7 @@ public class Resource : MonoBehaviour
             GetComponentInChildren<SpriteRenderer>().sprite = brokenSprite;
             GetComponent<HintObject>().enabled = false;
         }
-
+        Debug.Log("destroyed");
         FindObjectOfType<PlayerController>().animator.SetBool("Mining", false);
         slider.gameObject.SetActive(false);
         if (drop != null)
