@@ -19,6 +19,8 @@ namespace Tower
         private float floorHeight => Tower.Instance.levelHeight;
         [SerializeField] private FloorSO floorSO;
         [SerializeField] private GameObject[] buildings;
+        public GameObject rockRenderer;
+        public GameObject woodRenderer;
         private void Start()
         {
             selectedItem.gameObject.SetActive(false);
@@ -26,6 +28,16 @@ namespace Tower
 
         public void Init(int level, FloorSO floor)
         {
+            if (floor.isWood)
+            {
+                woodRenderer.SetActive(true);
+                rockRenderer.SetActive(false);
+            }
+            else
+            {
+                rockRenderer.SetActive(true);
+                woodRenderer.SetActive(false);
+            }
             transform.localPosition = new Vector3(0, floor.level * floorHeight);
             Debug.Log(transform.localPosition);
             Destroy(dirtEffect, 3);
@@ -81,6 +93,12 @@ namespace Tower
             {
                 Destroy(itemsContainer.gameObject);
             });
+        }
+
+        public void Upgrade()
+        {
+            rockRenderer.SetActive(true);
+            woodRenderer.SetActive(false);
         }
     }
 }

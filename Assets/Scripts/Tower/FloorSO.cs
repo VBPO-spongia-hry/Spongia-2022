@@ -12,5 +12,6 @@ namespace Tower
         public int level;
         public Crafting.CraftingRecipe recipe;
         public Crafting.CraftingRecipe unlockRecipe;
+        public bool isWood = false;
     }
 }
