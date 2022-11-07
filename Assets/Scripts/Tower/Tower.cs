@@ -97,7 +97,7 @@ namespace Tower
             floorObjects[0].transform.position = new Vector3(0, levelHeight, 0);
             _towerCamera.Show(0);
 
-            foreach (var floor in FindObjectsOfType<Floor>())
+            foreach (var floor in FindObjectsOfType<Floor>(true))
             {
                 floor.Upgrade();
             }

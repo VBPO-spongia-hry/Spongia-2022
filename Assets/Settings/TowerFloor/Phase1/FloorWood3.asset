@@ -18,3 +18,4 @@ MonoBehaviour:
   level: 2
   recipe: {fileID: 11400000, guid: b225ed459d3780d4aaaaa055da75b8f8, type: 2}
   unlockRecipe: {fileID: 11400000, guid: d0c550cf7e69a3e42acf27b02a535b9f, type: 2}
+  isWood: 1
