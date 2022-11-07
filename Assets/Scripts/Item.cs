@@ -23,6 +23,7 @@ public class Item : MonoBehaviour
     public void Init(ItemSO itemSO, Vector3 offset)
     {
         this.item = itemSO;
+        _light = GetComponent<Light2D>();
         GetComponent<SpriteRenderer>().sprite = item.icon;
         LeanTween.move(gameObject, transform.position + throwDistance * offset, .5f).setEaseOutCirc();
         _light.enabled = IsTool();
