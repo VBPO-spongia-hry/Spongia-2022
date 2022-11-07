@@ -190,8 +190,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279637526
+  m_fontColor: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -293,8 +293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -11.557404}
-  m_SizeDelta: {x: -20, y: -124.8192}
+  m_AnchoredPosition: {x: 0.000061035156, y: -11.557404}
+  m_SizeDelta: {x: -69.344, y: -124.8192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &55471779
 MonoBehaviour:
@@ -316,7 +316,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\u2018W A S D\u2019 or \u2018arrow keys\u2019 to move\nPick up with \u2018E\u2019\nMine
+    with \u2018left click\u2019 - we suggest checking if you are standing close enough
+    or trying again, if difficulties occur\n\u2018Up\u2019 and \u2018Down\u2019 Arrow
+    keys to move between floors in the tower.\nDrag items out of your inventory to
+    throw them out, items DO NOT despawn\nDrag items between inventory and crafting
+    recipe to craft\nAfter crafting an item click on it, it will appear in your inventory\n\nIf
+    stuck:\nCheck the recently unlocked areas for new resources\nSearch the map if
+    you see a resource that may be fitting your crafting recipe\nDon\u2019t worry,
+    there are plenty of resources to go around, so you won\u2019t run out\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0faf1bcd494274506ae235214ba08059, type: 2}
   m_sharedMaterial: {fileID: 5018892874904533666, guid: 0faf1bcd494274506ae235214ba08059, type: 2}
@@ -325,8 +333,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2018,7 +2026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1901306256
 RectTransform:
   m_ObjectHideFlags: 0

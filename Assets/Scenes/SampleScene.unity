@@ -3065,7 +3065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 2067019988}
-  m_PathPosition: 0
+  m_PathPosition: 0.01
   m_PositionUnits: 0
   m_PathOffset: {x: 3.817522, y: 1.4360161, z: 0}
   m_XDamping: 0
@@ -3133,8 +3133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 1
+  m_AmplitudeGain: -0.002981339
+  m_FrequencyGain: 0.1652863
   mNoiseOffsets: {x: 529.00385, y: 119.321014, z: -900.52893}
 --- !u!1001 &1167563607
 PrefabInstance:
@@ -3531,7 +3531,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 2
+    OrthographicSize: 2.001
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -3578,7 +3578,7 @@ MonoBehaviour:
   m_ShowImage: 1
   m_Image: {fileID: 0}
   m_Aspect: 0
-  m_Alpha: 0
+  m_Alpha: -0.00002742478
   m_Center: {x: 0, y: 0}
   m_Rotation: {x: 0, y: 0, z: 0}
   m_Scale: {x: 1, y: 1}
@@ -7358,15 +7358,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1503460138769016747, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1503460138769016747, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 10.24
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 1503460138769016747, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 5.76
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 1508936789171126187, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_AnchorMax.x
@@ -38218,11 +38218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7350600140851230529, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 2.5
+      value: 0.7081979
       objectReference: {fileID: 0}
     - target: {fileID: 7350600140851230529, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -3
+      value: -1.704558
       objectReference: {fileID: 0}
     - target: {fileID: 7350600141277274454, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_Name
@@ -38284,17 +38284,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10.42054
       objectReference: {fileID: 0}
+    - target: {fileID: 7350600141868350298, guid: c808facfb5dab384f9af63de84102060, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 8.05255
+      objectReference: {fileID: 0}
     - target: {fileID: 7350600142403400652, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2137150486, guid: 568da1625de36b5a38c75462151b6439, type: 3}
     - target: {fileID: 7350600142461097047, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 2.5
+      value: 0.7081979
       objectReference: {fileID: 0}
     - target: {fileID: 7350600142461097047, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -3
+      value: -1.704558
       objectReference: {fileID: 0}
     - target: {fileID: 7350600142468905603, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: TowerLevels.Array.size
@@ -38346,11 +38350,11 @@ PrefabInstance:
       objectReference: {fileID: -546314630, guid: 956e96fe987e34f409f4453d462f88c2, type: 3}
     - target: {fileID: 7350600142615980492, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 2.5
+      value: 0.7081979
       objectReference: {fileID: 0}
     - target: {fileID: 7350600142615980492, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -3
+      value: -1.704558
       objectReference: {fileID: 0}
     - target: {fileID: 7422771815559822185, guid: c808facfb5dab384f9af63de84102060, type: 3}
       propertyPath: m_Bounds.m_Center.y

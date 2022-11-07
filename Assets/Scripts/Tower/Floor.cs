@@ -97,8 +97,15 @@ namespace Tower
 
         public void Upgrade()
         {
-            rockRenderer.SetActive(true);
             woodRenderer.SetActive(false);
+            Tower.OnTowerUpdated += OntowerUpgraded;
+        }
+
+        private void OntowerUpgraded(int level)
+        {
+            if (rockRenderer != null)
+                rockRenderer.SetActive(true);
+            Tower.OnTowerUpdated -= OntowerUpgraded;
         }
     }
 }

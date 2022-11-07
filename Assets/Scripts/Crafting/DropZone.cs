@@ -14,6 +14,7 @@ namespace Crafting
         public int capacity;
 
         public bool Full => count == capacity;
+        [SerializeField] private TextMeshProUGUI nameText;
         [SerializeField] private TextMeshProUGUI countText;
         [SerializeField] private Image acceptsImage;
         [SerializeField] private Crafter _crafter;
@@ -23,6 +24,7 @@ namespace Crafting
             acceptsImage.sprite = accepts.icon;
             _crafter = GetComponentInParent<Crafter>();
             countText.text = $"0/{capacity}";
+            nameText.text = accepts.itemName;
             acceptsImage.color = new Color(0, 0, 0, 155f / 255f);
             _crafter.onCraftingComplete += () =>
             {
@@ -35,6 +37,7 @@ namespace Crafting
         {
             if (item.name != accepts.name || count == capacity) return false;
             count++;
+            nameText.gameObject.SetActive(false);
             acceptsImage.color = new Color(1, 1, 1, 1);
             countText.text = count.ToString() + "/" + capacity.ToString();
             _crafter.OnZoneUpdated();
@@ -55,6 +58,7 @@ namespace Crafting
         public void Clear()
         {
             count = 0;
+            nameText.gameObject.SetActive(true);
         }
 
         public void OnPointerEnter()
