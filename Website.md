@@ -1,0 +1,1 @@
+You were tasked by God with building a tall tower. Gather resources craft, materials, build the next floor, explore the map and repeat. The game takes about an hour of playtime, with very simple controls and non frustrating gameplay.
